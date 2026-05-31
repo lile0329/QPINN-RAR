@@ -31,7 +31,7 @@ def save_solution_comparison_heatmaps(
     y_label: str = "y",
     title_prefix: str = "",
     solution_cmap: str = "jet",
-    error_cmap: str = "magma",
+    error_cmap: str = "YlOrRd",
     figsize: Tuple[float, float] = (15.5, 4.8),
     dpi: int = 300,
     solution_vmin_vmax: Optional[Tuple[float, float]] = None,

@@ -29,6 +29,7 @@ PROBLEM_TITLES = {
 }
 
 RELATIVE_EPS = 1e-12
+HEAT3D_SLICE_Y_VALUES = (0.25, 0.50, 0.75)
 
 
 def finite_minmax(arrays: Iterable[np.ndarray]) -> Tuple[float, float]:
@@ -75,7 +76,7 @@ def save_relative_error_heatmap(
     y_label: str,
     title: str,
     vmin_vmax: Tuple[float, float],
-    cmap: str = "magma",
+    cmap: str = "YlOrRd",
     dpi: int = 300,
 ) -> None:
     import matplotlib.pyplot as plt
@@ -106,6 +107,51 @@ def save_relative_error_heatmap(
     cax = divider.append_axes("right", size="4.5%", pad=0.06)
     fig.colorbar(im, cax=cax, format="%.1e")
     plt.tight_layout()
+    fig.savefig(save_path, dpi=dpi, bbox_inches="tight")
+    plt.close(fig)
+
+
+def save_heat3d_relative_error_slices(
+    *,
+    slices: List[Dict],
+    save_path: Path,
+    x_label: str,
+    y_label: str,
+    title: str,
+    vmin_vmax: Tuple[float, float],
+    cmap: str = "YlOrRd",
+    dpi: int = 300,
+) -> None:
+    import matplotlib.pyplot as plt
+
+    save_path = Path(save_path)
+    save_path.parent.mkdir(parents=True, exist_ok=True)
+
+    ncols = len(slices)
+    fig, axes = plt.subplots(1, ncols, figsize=(5.0 * ncols, 4.8), sharex=True, sharey=True)
+    axes = np.atleast_1d(axes)
+    im = None
+
+    for ax, item in zip(axes, slices):
+        x = np.asarray(item["x"]).reshape(-1)
+        y = np.asarray(item["y"]).reshape(-1)
+        error = np.asarray(item["relative_error_map"])
+        im = ax.imshow(
+            error,
+            origin="lower",
+            aspect="auto",
+            extent=[float(x.min()), float(x.max()), float(y.min()), float(y.max())],
+            vmin=vmin_vmax[0],
+            vmax=vmin_vmax[1],
+            cmap=cmap,
+        )
+        ax.set_title(f"y={item['y0']:.2f}, z={item['z0']:.2f}\nRelL2={item['relative_l2']:.2e}")
+        ax.set_xlabel(x_label)
+
+    axes[0].set_ylabel(y_label)
+    fig.suptitle(title)
+    if im is not None:
+        fig.colorbar(im, ax=axes.ravel().tolist(), format="%.1e", fraction=0.025, pad=0.02)
     fig.savefig(save_path, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
 
@@ -219,13 +265,14 @@ def evaluate_checkpoint(model_path: Path, device, chunk_size: int) -> Dict:
         u_true = u_xt.T
         output_name = "solution_comparison_heat3d_unified.png"
         relative_output_name = "relative_l2_error_heat3d_unified.png"
+        relative_slices_output_name = "relative_l2_error_heat3d_slices_unified.png"
         x_label, y_label = "x", "t"
     else:
         raise ValueError(f"Unsupported problem {problem!r} in {model_path}")
 
     inputs_t = torch.tensor(inputs, dtype=torch.float32, device=device)
     u_pred = predict_in_chunks(model, inputs_t, chunk_size).reshape(nx, nt).T
-    return {
+    result = {
         "problem": problem,
         "path": model_path.parent,
         "x": x,
@@ -239,6 +286,41 @@ def evaluate_checkpoint(model_path: Path, device, chunk_size: int) -> Dict:
         "relative_l2": relative_l2_error(u_pred, u_true),
         "relative_error_map": relative_error_map(u_pred, u_true),
     }
+    if problem == "heat3d_exact":
+        slices = []
+        for slice_y0 in HEAT3D_SLICE_Y_VALUES:
+            t_s, x_s, u_xt_s = load_heat3d_exact_slice_data(
+                nx=nx, nt=nt, y0=slice_y0, z0=z0, alpha=alpha
+            )
+            t_grid_s, x_grid_s = np.meshgrid(t_s, x_s)
+            inputs_s = np.concatenate(
+                [
+                    t_grid_s.reshape(-1, 1),
+                    x_grid_s.reshape(-1, 1),
+                    np.full((t_grid_s.size, 1), slice_y0),
+                    np.full((t_grid_s.size, 1), z0),
+                ],
+                axis=1,
+            )
+            inputs_s_t = torch.tensor(inputs_s, dtype=torch.float32, device=device)
+            u_true_s = u_xt_s.T
+            u_pred_s = predict_in_chunks(model, inputs_s_t, chunk_size).reshape(nx, nt).T
+            slices.append(
+                {
+                    "x": x_s,
+                    "y": t_s,
+                    "y0": float(slice_y0),
+                    "z0": z0,
+                    "u_pred": u_pred_s,
+                    "u_true": u_true_s,
+                    "relative_l2": relative_l2_error(u_pred_s, u_true_s),
+                    "relative_error_map": relative_error_map(u_pred_s, u_true_s),
+                }
+            )
+        result["heat3d_relative_slices"] = slices
+        result["relative_slices_output_name"] = relative_slices_output_name
+
+    return result
 
 
 def find_model_paths(checkpoints_dir: Path, problems: List[str]) -> List[Path]:
@@ -353,6 +435,29 @@ def main():
                 dpi=args.dpi,
             )
             print(f"Saved {relative_save_path}")
+
+        if problem == "heat3d_exact":
+            slice_maps = [
+                slice_item["relative_error_map"]
+                for item in results
+                for slice_item in item.get("heat3d_relative_slices", [])
+            ]
+            if slice_maps:
+                heat3d_slice_error_range = (0.0, finite_minmax(slice_maps)[1])
+                if args.relative_vmax is not None:
+                    heat3d_slice_error_range = (0.0, float(args.relative_vmax))
+                for item in results:
+                    slices_save_path = item["path"] / item["relative_slices_output_name"]
+                    save_heat3d_relative_error_slices(
+                        slices=item["heat3d_relative_slices"],
+                        save_path=slices_save_path,
+                        x_label=item["x_label"],
+                        y_label=item["y_label"],
+                        title="Heat3D Relative Error Slices",
+                        vmin_vmax=heat3d_slice_error_range,
+                        dpi=args.dpi,
+                    )
+                    print(f"Saved {slices_save_path}")
 
 
 if __name__ == "__main__":
