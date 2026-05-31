@@ -1,0 +1,2 @@
+problem,run_id,output_log,final_iteration,final_rel_l2_error,best_rel_l2_error,best_rel_l2_iteration,seed
+diffusion_exact,2026-03-03_16-36-17-011144,checkpoints\diffusion_exact\2026-03-03_16-36-17-011144\output.log,614,0.0003172476,0.0003172476,10600,20

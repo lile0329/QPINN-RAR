@@ -1,0 +1,2 @@
+problem,run_id,output_log,final_iteration,final_rel_l2_error,best_rel_l2_error,best_rel_l2_iteration,seed
+burgers_exact,2026-03-04_12-31-24-748451,checkpoints\burgers_exact\2026-03-04_12-31-24-748451\output.log,239,0.0008735437,0.0008735437,10200,20

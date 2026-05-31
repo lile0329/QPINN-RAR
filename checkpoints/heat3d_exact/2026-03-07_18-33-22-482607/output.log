@@ -1,0 +1,354 @@
+Random seed set to: 203
+Solving 3D heat equation u_t = alpha (u_{xx}+u_{yy}+u_{zz}) on [0,1]^3 with homogeneous Dirichlet BC
+checkpoint path: self.log_path='./checkpoints/heat3d_exact\\2026-03-07_18-33-22-482607'
+Using Classical Solver2
+The settings used:
+batch_size : 64
+epochs : 20000
+lr : 0.001
+seed : 203
+print_every : 100
+log_path : ./checkpoints/heat3d_exact
+input_dim : 4
+output_dim : 1
+num_qubits : 5
+hidden_dim : 20
+num_quantum_layers : 1
+classic_network : [4, 20, 1]
+q_ansatz : cross_mesh
+mode : hybrid
+activation : tanh
+shots : None
+problem : heat3d_exact
+solver : Classical2
+device : cpu
+method : None
+cutoff_dim : 20
+class : CVNeuralNetwork1
+encoding : angle
+use_rar : True
+rar_eval_freq : 2000
+rar_threshold : 0.0005
+rar_num_candidates : 10000
+rar_num_add : 100
+use_hybrid_optimizer : True
+adam_iterations : 10000
+use_scipy_lbfgs : True
+lbfgs_lr : 1
+lbfgs_line_search : strong_wolfe
+lbfgs_tolerance_grad : 1e-05
+lbfgs_tolerance_change : 1e-07
+lbfgs_maxiter : 10000
+lbfgs_factr : 1000.0
+lbfgs_pgtol : 1e-14
+lbfgs_maxls : 50
+lbfgs_m : 100
+lbfgs_eval_every : 100
+domainN : 500
+boundaryN : 50
+initialN : 50
+eval_total_points : 10000
+nx : 200
+nt : 200
+y0 : 0.5
+z0 : 0.5
+alpha : 0.1
+Total number of parameters: 2221
+Iteration: 0, loss_r = 1.9e-01 ,  loss_bc = 1.5e+00,  loss_ic = 1.6e-01,  lr = 1.0e-03, time_taken = 5.6e-02, rel_l2_error = 2.7e+00
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 100, loss_r = 5.6e-03 ,  loss_bc = 1.7e-02,  loss_ic = 4.7e-02,  lr = 1.0e-03, time_taken = 4.4e-02, rel_l2_error = 7.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 200, loss_r = 4.5e-03 ,  loss_bc = 1.5e-02,  loss_ic = 5.5e-02,  lr = 1.0e-03, time_taken = 4.6e-02, rel_l2_error = 7.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 300, loss_r = 3.5e-03 ,  loss_bc = 1.4e-02,  loss_ic = 6.0e-02,  lr = 1.0e-03, time_taken = 3.7e-02, rel_l2_error = 6.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 400, loss_r = 3.1e-03 ,  loss_bc = 2.1e-02,  loss_ic = 3.7e-02,  lr = 1.0e-03, time_taken = 5.5e-02, rel_l2_error = 5.7e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 500, loss_r = 3.5e-03 ,  loss_bc = 1.1e-02,  loss_ic = 2.5e-02,  lr = 1.0e-03, time_taken = 3.5e-02, rel_l2_error = 5.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 600, loss_r = 3.6e-03 ,  loss_bc = 3.0e-02,  loss_ic = 1.8e-02,  lr = 1.0e-03, time_taken = 3.4e-02, rel_l2_error = 5.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 700, loss_r = 3.9e-03 ,  loss_bc = 5.2e-03,  loss_ic = 2.8e-02,  lr = 1.0e-03, time_taken = 4.2e-02, rel_l2_error = 4.6e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 800, loss_r = 4.3e-03 ,  loss_bc = 5.7e-03,  loss_ic = 1.8e-02,  lr = 1.0e-03, time_taken = 4.5e-02, rel_l2_error = 4.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 900, loss_r = 4.3e-03 ,  loss_bc = 8.8e-03,  loss_ic = 1.5e-02,  lr = 1.0e-03, time_taken = 4.3e-02, rel_l2_error = 4.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1000, loss_r = 5.1e-03 ,  loss_bc = 8.0e-03,  loss_ic = 1.0e-02,  lr = 1.0e-03, time_taken = 5.7e-02, rel_l2_error = 4.1e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1100, loss_r = 2.4e-03 ,  loss_bc = 7.4e-03,  loss_ic = 1.3e-02,  lr = 1.0e-03, time_taken = 4.7e-02, rel_l2_error = 3.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1200, loss_r = 5.1e-03 ,  loss_bc = 6.6e-03,  loss_ic = 8.5e-03,  lr = 1.0e-03, time_taken = 5.0e-02, rel_l2_error = 3.7e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1300, loss_r = 3.4e-03 ,  loss_bc = 4.4e-03,  loss_ic = 6.5e-03,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 3.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1400, loss_r = 5.5e-03 ,  loss_bc = 6.6e-03,  loss_ic = 7.6e-03,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 3.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1500, loss_r = 4.9e-03 ,  loss_bc = 5.6e-03,  loss_ic = 8.7e-03,  lr = 1.0e-03, time_taken = 4.4e-02, rel_l2_error = 3.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1600, loss_r = 3.4e-03 ,  loss_bc = 4.7e-03,  loss_ic = 6.1e-03,  lr = 1.0e-03, time_taken = 5.9e-02, rel_l2_error = 3.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1700, loss_r = 2.9e-03 ,  loss_bc = 4.6e-03,  loss_ic = 6.7e-03,  lr = 1.0e-03, time_taken = 5.7e-02, rel_l2_error = 3.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1800, loss_r = 4.0e-03 ,  loss_bc = 5.6e-03,  loss_ic = 4.4e-03,  lr = 1.0e-03, time_taken = 4.7e-02, rel_l2_error = 3.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 1900, loss_r = 2.6e-03 ,  loss_bc = 3.1e-03,  loss_ic = 5.3e-03,  lr = 1.0e-03, time_taken = 4.5e-02, rel_l2_error = 3.0e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 2000, loss_r = 4.6e-03 ,  loss_bc = 7.3e-03,  loss_ic = 6.8e-03,  lr = 1.0e-03, time_taken = 4.8e-02, rel_l2_error = 3.1e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+
+=== RAR Evaluation at iteration 2000 ===
+Mean residual: 3.327e-02
+Added 100 point(s). Total adaptive points: 100
+
+Iteration: 2100, loss_r = 4.7e-03 ,  loss_bc = 5.3e-03,  loss_ic = 6.5e-03,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 3.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 2200, loss_r = 4.3e-03 ,  loss_bc = 5.5e-03,  loss_ic = 6.2e-03,  lr = 1.0e-03, time_taken = 4.2e-02, rel_l2_error = 3.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 2300, loss_r = 4.4e-03 ,  loss_bc = 4.5e-03,  loss_ic = 4.5e-03,  lr = 1.0e-03, time_taken = 4.7e-02, rel_l2_error = 2.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 2400, loss_r = 2.9e-03 ,  loss_bc = 4.0e-03,  loss_ic = 3.6e-03,  lr = 1.0e-03, time_taken = 4.9e-02, rel_l2_error = 2.6e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 2500, loss_r = 2.3e-03 ,  loss_bc = 2.8e-03,  loss_ic = 2.7e-03,  lr = 1.0e-03, time_taken = 4.7e-02, rel_l2_error = 2.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 2600, loss_r = 2.7e-03 ,  loss_bc = 3.4e-03,  loss_ic = 1.1e-03,  lr = 1.0e-03, time_taken = 4.3e-02, rel_l2_error = 2.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 2700, loss_r = 1.6e-03 ,  loss_bc = 3.6e-03,  loss_ic = 1.4e-03,  lr = 1.0e-03, time_taken = 3.8e-02, rel_l2_error = 2.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 2800, loss_r = 2.7e-03 ,  loss_bc = 2.0e-03,  loss_ic = 2.6e-03,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 2.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 2900, loss_r = 1.5e-03 ,  loss_bc = 2.1e-03,  loss_ic = 1.6e-03,  lr = 1.0e-03, time_taken = 5.4e-02, rel_l2_error = 2.1e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3000, loss_r = 2.7e-03 ,  loss_bc = 1.4e-03,  loss_ic = 2.8e-03,  lr = 1.0e-03, time_taken = 5.3e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3100, loss_r = 1.3e-03 ,  loss_bc = 2.2e-03,  loss_ic = 1.4e-03,  lr = 1.0e-03, time_taken = 4.5e-02, rel_l2_error = 2.0e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3200, loss_r = 1.5e-03 ,  loss_bc = 1.6e-03,  loss_ic = 2.2e-03,  lr = 1.0e-03, time_taken = 4.7e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3300, loss_r = 2.1e-03 ,  loss_bc = 1.8e-03,  loss_ic = 1.7e-03,  lr = 1.0e-03, time_taken = 4.5e-02, rel_l2_error = 2.1e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3400, loss_r = 1.4e-03 ,  loss_bc = 1.5e-03,  loss_ic = 9.6e-04,  lr = 1.0e-03, time_taken = 4.1e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3500, loss_r = 1.1e-03 ,  loss_bc = 1.6e-03,  loss_ic = 9.6e-04,  lr = 1.0e-03, time_taken = 5.4e-02, rel_l2_error = 1.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3600, loss_r = 6.6e-04 ,  loss_bc = 1.8e-03,  loss_ic = 1.0e-03,  lr = 1.0e-03, time_taken = 4.5e-02, rel_l2_error = 1.7e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3700, loss_r = 1.4e-03 ,  loss_bc = 1.3e-03,  loss_ic = 1.6e-03,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3800, loss_r = 1.0e-03 ,  loss_bc = 1.4e-03,  loss_ic = 2.2e-03,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 1.7e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 3900, loss_r = 7.6e-04 ,  loss_bc = 1.7e-03,  loss_ic = 6.5e-04,  lr = 1.0e-03, time_taken = 5.4e-02, rel_l2_error = 1.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 4000, loss_r = 1.1e-03 ,  loss_bc = 9.1e-04,  loss_ic = 1.1e-03,  lr = 1.0e-03, time_taken = 5.3e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+
+=== RAR Evaluation at iteration 4000 ===
+Mean residual: 1.929e-02
+Added 100 point(s). Total adaptive points: 200
+
+Iteration: 4100, loss_r = 1.9e-03 ,  loss_bc = 1.9e-03,  loss_ic = 1.2e-03,  lr = 1.0e-03, time_taken = 4.8e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 4200, loss_r = 1.6e-03 ,  loss_bc = 1.8e-03,  loss_ic = 1.2e-03,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 4300, loss_r = 1.5e-03 ,  loss_bc = 2.9e-03,  loss_ic = 9.4e-04,  lr = 1.0e-03, time_taken = 4.3e-02, rel_l2_error = 1.7e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 4400, loss_r = 1.6e-03 ,  loss_bc = 3.4e-03,  loss_ic = 6.4e-04,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 2.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 4500, loss_r = 2.0e-03 ,  loss_bc = 1.9e-03,  loss_ic = 9.6e-04,  lr = 1.0e-03, time_taken = 4.0e-02, rel_l2_error = 1.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 4600, loss_r = 8.8e-04 ,  loss_bc = 1.7e-03,  loss_ic = 7.1e-04,  lr = 1.0e-03, time_taken = 5.6e-02, rel_l2_error = 1.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 4700, loss_r = 1.3e-03 ,  loss_bc = 1.5e-03,  loss_ic = 1.0e-03,  lr = 1.0e-03, time_taken = 5.7e-02, rel_l2_error = 1.7e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 4800, loss_r = 1.1e-03 ,  loss_bc = 1.4e-03,  loss_ic = 6.5e-04,  lr = 1.0e-03, time_taken = 3.4e-02, rel_l2_error = 1.7e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 4900, loss_r = 9.4e-04 ,  loss_bc = 1.2e-03,  loss_ic = 8.6e-04,  lr = 1.0e-03, time_taken = 4.7e-02, rel_l2_error = 1.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5000, loss_r = 1.1e-03 ,  loss_bc = 1.1e-03,  loss_ic = 9.0e-04,  lr = 1.0e-03, time_taken = 4.4e-02, rel_l2_error = 1.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5100, loss_r = 6.5e-04 ,  loss_bc = 9.9e-04,  loss_ic = 8.5e-04,  lr = 1.0e-03, time_taken = 4.7e-02, rel_l2_error = 1.6e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5200, loss_r = 5.6e-04 ,  loss_bc = 1.2e-03,  loss_ic = 7.2e-04,  lr = 1.0e-03, time_taken = 4.2e-02, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5300, loss_r = 1.7e-03 ,  loss_bc = 1.1e-03,  loss_ic = 8.0e-04,  lr = 1.0e-03, time_taken = 4.8e-02, rel_l2_error = 1.7e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5400, loss_r = 7.0e-04 ,  loss_bc = 1.4e-03,  loss_ic = 6.0e-04,  lr = 1.0e-03, time_taken = 4.8e-02, rel_l2_error = 1.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5500, loss_r = 7.8e-04 ,  loss_bc = 1.1e-03,  loss_ic = 6.8e-04,  lr = 1.0e-03, time_taken = 4.0e-02, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5600, loss_r = 7.6e-04 ,  loss_bc = 9.9e-04,  loss_ic = 7.7e-04,  lr = 1.0e-03, time_taken = 4.2e-02, rel_l2_error = 1.6e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5700, loss_r = 1.2e-03 ,  loss_bc = 8.5e-04,  loss_ic = 5.3e-04,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 1.6e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5800, loss_r = 8.3e-04 ,  loss_bc = 1.1e-03,  loss_ic = 7.0e-04,  lr = 1.0e-03, time_taken = 4.1e-02, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 5900, loss_r = 7.6e-04 ,  loss_bc = 8.7e-04,  loss_ic = 4.5e-04,  lr = 1.0e-03, time_taken = 3.6e-02, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 6000, loss_r = 6.3e-04 ,  loss_bc = 9.8e-04,  loss_ic = 6.9e-04,  lr = 1.0e-03, time_taken = 5.3e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+
+=== RAR Evaluation at iteration 6000 ===
+Mean residual: 1.691e-02
+Added 100 point(s). Total adaptive points: 300
+
+Iteration: 6100, loss_r = 1.1e-03 ,  loss_bc = 1.3e-03,  loss_ic = 8.4e-04,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 6200, loss_r = 1.1e-03 ,  loss_bc = 7.8e-04,  loss_ic = 8.6e-04,  lr = 1.0e-03, time_taken = 5.0e-02, rel_l2_error = 1.8e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 6300, loss_r = 6.8e-04 ,  loss_bc = 8.0e-04,  loss_ic = 4.3e-04,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 1.6e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 6400, loss_r = 8.0e-04 ,  loss_bc = 1.3e-03,  loss_ic = 3.6e-04,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 6500, loss_r = 7.5e-04 ,  loss_bc = 8.7e-04,  loss_ic = 1.5e-03,  lr = 1.0e-03, time_taken = 4.3e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 6600, loss_r = 6.5e-04 ,  loss_bc = 7.0e-04,  loss_ic = 6.4e-04,  lr = 1.0e-03, time_taken = 5.3e-02, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 6700, loss_r = 9.2e-04 ,  loss_bc = 1.2e-03,  loss_ic = 4.7e-04,  lr = 1.0e-03, time_taken = 4.6e-02, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 6800, loss_r = 6.3e-04 ,  loss_bc = 8.1e-04,  loss_ic = 6.8e-04,  lr = 1.0e-03, time_taken = 4.5e-02, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 6900, loss_r = 8.6e-04 ,  loss_bc = 9.3e-04,  loss_ic = 5.4e-04,  lr = 1.0e-03, time_taken = 4.0e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7000, loss_r = 1.2e-03 ,  loss_bc = 1.3e-03,  loss_ic = 9.9e-04,  lr = 1.0e-03, time_taken = 5.0e-02, rel_l2_error = 1.6e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7100, loss_r = 6.1e-04 ,  loss_bc = 6.4e-04,  loss_ic = 5.6e-04,  lr = 1.0e-03, time_taken = 5.5e-02, rel_l2_error = 1.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7200, loss_r = 7.0e-04 ,  loss_bc = 6.5e-04,  loss_ic = 4.4e-04,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7300, loss_r = 2.9e-04 ,  loss_bc = 7.3e-04,  loss_ic = 3.6e-04,  lr = 1.0e-03, time_taken = 5.0e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7400, loss_r = 3.7e-04 ,  loss_bc = 7.6e-04,  loss_ic = 5.4e-04,  lr = 1.0e-03, time_taken = 5.3e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7500, loss_r = 3.6e-04 ,  loss_bc = 8.5e-04,  loss_ic = 4.3e-04,  lr = 1.0e-03, time_taken = 4.8e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7600, loss_r = 6.1e-04 ,  loss_bc = 7.3e-04,  loss_ic = 4.0e-04,  lr = 1.0e-03, time_taken = 4.0e-02, rel_l2_error = 1.6e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7700, loss_r = 4.5e-04 ,  loss_bc = 8.0e-04,  loss_ic = 4.4e-04,  lr = 1.0e-03, time_taken = 5.0e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7800, loss_r = 2.5e-04 ,  loss_bc = 6.6e-04,  loss_ic = 2.7e-04,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 1.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 7900, loss_r = 4.5e-04 ,  loss_bc = 3.9e-04,  loss_ic = 6.8e-04,  lr = 1.0e-03, time_taken = 4.8e-02, rel_l2_error = 1.6e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 8000, loss_r = 3.4e-04 ,  loss_bc = 7.6e-04,  loss_ic = 2.8e-04,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+
+=== RAR Evaluation at iteration 8000 ===
+Mean residual: 1.242e-02
+Added 100 point(s). Total adaptive points: 400
+
+Iteration: 8100, loss_r = 1.2e-03 ,  loss_bc = 7.1e-04,  loss_ic = 3.3e-04,  lr = 1.0e-03, time_taken = 5.3e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 8200, loss_r = 7.4e-04 ,  loss_bc = 7.9e-04,  loss_ic = 3.6e-04,  lr = 1.0e-03, time_taken = 5.3e-02, rel_l2_error = 1.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 8300, loss_r = 4.6e-04 ,  loss_bc = 8.3e-04,  loss_ic = 3.8e-04,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 1.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 8400, loss_r = 3.4e-04 ,  loss_bc = 5.9e-04,  loss_ic = 5.9e-04,  lr = 1.0e-03, time_taken = 4.5e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 8500, loss_r = 8.0e-04 ,  loss_bc = 7.1e-04,  loss_ic = 4.0e-04,  lr = 1.0e-03, time_taken = 5.4e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 8600, loss_r = 4.1e-04 ,  loss_bc = 5.3e-04,  loss_ic = 3.7e-04,  lr = 1.0e-03, time_taken = 5.6e-02, rel_l2_error = 1.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 8700, loss_r = 6.2e-04 ,  loss_bc = 7.6e-04,  loss_ic = 2.6e-04,  lr = 1.0e-03, time_taken = 5.0e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 8800, loss_r = 4.2e-04 ,  loss_bc = 7.0e-04,  loss_ic = 3.3e-04,  lr = 1.0e-03, time_taken = 5.3e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 8900, loss_r = 6.6e-04 ,  loss_bc = 9.7e-04,  loss_ic = 3.9e-04,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9000, loss_r = 5.3e-04 ,  loss_bc = 5.2e-04,  loss_ic = 2.6e-04,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9100, loss_r = 4.0e-04 ,  loss_bc = 5.9e-04,  loss_ic = 3.9e-04,  lr = 1.0e-03, time_taken = 5.4e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9200, loss_r = 4.9e-04 ,  loss_bc = 4.5e-04,  loss_ic = 3.9e-04,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9300, loss_r = 4.9e-04 ,  loss_bc = 5.4e-04,  loss_ic = 2.3e-04,  lr = 1.0e-03, time_taken = 5.5e-02, rel_l2_error = 1.1e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9400, loss_r = 4.3e-04 ,  loss_bc = 8.4e-04,  loss_ic = 3.8e-04,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 1.3e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9500, loss_r = 3.5e-04 ,  loss_bc = 3.9e-04,  loss_ic = 3.2e-04,  lr = 1.0e-03, time_taken = 4.9e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9600, loss_r = 4.5e-04 ,  loss_bc = 5.6e-04,  loss_ic = 2.7e-04,  lr = 1.0e-03, time_taken = 5.2e-02, rel_l2_error = 1.4e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9700, loss_r = 5.2e-04 ,  loss_bc = 6.3e-04,  loss_ic = 1.7e-04,  lr = 1.0e-03, time_taken = 5.1e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9800, loss_r = 3.3e-04 ,  loss_bc = 5.8e-04,  loss_ic = 2.1e-04,  lr = 1.0e-03, time_taken = 5.6e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Iteration: 9900, loss_r = 2.0e-04 ,  loss_bc = 4.2e-04,  loss_ic = 3.2e-04,  lr = 1.0e-03, time_taken = 4.8e-02, rel_l2_error = 1.2e-01
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+
+=== Switching to LBFGS optimizer at iteration 10000 ===
+Using scipy L-BFGS-B optimizer
+Optimizer: L-BFGS-B (maxiter=10000, factr=1000.0, m=100, maxls=50, pgtol=1e-14)
+L-BFGS Iteration: 0, Loss: 8.033343e-04
+L-BFGS Iteration: 1, Loss: 7.419382e-04, Relative L2 Error: 1.076317e-01
+L-BFGS: Time for 100 iterations = 23.8127 s
+L-BFGS Iteration: 100, Loss: 3.290691e-04, Relative L2 Error: 7.562755e-02
+L-BFGS Iteration: 200, Loss: 1.883611e-04, Relative L2 Error: 5.725338e-02
+L-BFGS Iteration: 300, Loss: 1.260368e-04, Relative L2 Error: 4.770931e-02
+L-BFGS Iteration: 400, Loss: 9.078064e-05, Relative L2 Error: 4.794953e-02
+L-BFGS Iteration: 500, Loss: 7.396455e-05, Relative L2 Error: 4.195310e-02
+L-BFGS Iteration: 600, Loss: 6.328575e-05, Relative L2 Error: 4.447152e-02
+L-BFGS Iteration: 700, Loss: 5.535916e-05, Relative L2 Error: 3.907527e-02
+L-BFGS Iteration: 800, Loss: 4.919010e-05, Relative L2 Error: 4.036605e-02
+L-BFGS Iteration: 900, Loss: 4.346680e-05, Relative L2 Error: 3.787779e-02
+L-BFGS Iteration: 1000, Loss: 3.876169e-05, Relative L2 Error: 3.725080e-02
+L-BFGS Iteration: 1100, Loss: 3.501116e-05, Relative L2 Error: 3.933109e-02
+L-BFGS Iteration: 1200, Loss: 3.113043e-05, Relative L2 Error: 3.452061e-02
+L-BFGS Iteration: 1300, Loss: 2.769199e-05, Relative L2 Error: 3.626325e-02
+L-BFGS Iteration: 1400, Loss: 2.471118e-05, Relative L2 Error: 3.502974e-02
+L-BFGS Iteration: 1500, Loss: 2.273842e-05, Relative L2 Error: 3.525201e-02
+L-BFGS Iteration: 1600, Loss: 2.102747e-05, Relative L2 Error: 3.603771e-02
+L-BFGS Iteration: 1700, Loss: 1.964145e-05, Relative L2 Error: 3.430936e-02
+L-BFGS Iteration: 1800, Loss: 1.836573e-05, Relative L2 Error: 3.354147e-02
+L-BFGS Iteration: 1900, Loss: 1.704934e-05, Relative L2 Error: 3.322452e-02
+L-BFGS Iteration: 2000, Loss: 1.585757e-05, Relative L2 Error: 3.210801e-02
+L-BFGS Iteration: 2100, Loss: 1.465007e-05, Relative L2 Error: 2.981834e-02
+L-BFGS Iteration: 2200, Loss: 1.363596e-05, Relative L2 Error: 2.882897e-02
+L-BFGS Iteration: 2300, Loss: 1.280327e-05, Relative L2 Error: 3.003363e-02
+L-BFGS Iteration: 2400, Loss: 1.205601e-05, Relative L2 Error: 2.765357e-02
+L-BFGS Iteration: 2500, Loss: 1.119601e-05, Relative L2 Error: 2.721659e-02
+L-BFGS Iteration: 2600, Loss: 1.045676e-05, Relative L2 Error: 2.609543e-02
+L-BFGS Iteration: 2700, Loss: 9.740634e-06, Relative L2 Error: 2.559355e-02
+L-BFGS Iteration: 2800, Loss: 9.156895e-06, Relative L2 Error: 2.551804e-02
+L-BFGS Iteration: 2900, Loss: 8.564962e-06, Relative L2 Error: 2.636901e-02
+L-BFGS Iteration: 3000, Loss: 8.100733e-06, Relative L2 Error: 2.517774e-02
+L-BFGS Iteration: 3100, Loss: 7.666670e-06, Relative L2 Error: 2.331290e-02
+L-BFGS Iteration: 3200, Loss: 7.197524e-06, Relative L2 Error: 2.329159e-02
+L-BFGS Iteration: 3300, Loss: 6.891795e-06, Relative L2 Error: 2.242267e-02
+L-BFGS Iteration: 3400, Loss: 6.539513e-06, Relative L2 Error: 2.301471e-02
+L-BFGS Iteration: 3500, Loss: 6.165514e-06, Relative L2 Error: 2.160078e-02
+L-BFGS Iteration: 3600, Loss: 5.904640e-06, Relative L2 Error: 2.215680e-02
+L-BFGS Iteration: 3700, Loss: 5.616802e-06, Relative L2 Error: 2.115884e-02
+L-BFGS Iteration: 3800, Loss: 5.337505e-06, Relative L2 Error: 2.213535e-02
+L-BFGS Iteration: 3900, Loss: 5.089169e-06, Relative L2 Error: 2.043080e-02
+L-BFGS Iteration: 4000, Loss: 4.885495e-06, Relative L2 Error: 2.110058e-02
+L-BFGS Iteration: 4100, Loss: 4.716164e-06, Relative L2 Error: 2.103608e-02
+L-BFGS Iteration: 4200, Loss: 4.519287e-06, Relative L2 Error: 2.097910e-02
+L-BFGS Iteration: 4300, Loss: 4.321129e-06, Relative L2 Error: 2.101242e-02
+L-BFGS Iteration: 4400, Loss: 4.114038e-06, Relative L2 Error: 2.096068e-02
+L-BFGS Iteration: 4500, Loss: 3.913386e-06, Relative L2 Error: 2.070330e-02
+L-BFGS Iteration: 4600, Loss: 3.720026e-06, Relative L2 Error: 2.154676e-02
+L-BFGS Iteration: 4700, Loss: 3.537313e-06, Relative L2 Error: 2.040501e-02
+L-BFGS Iteration: 4800, Loss: 3.408411e-06, Relative L2 Error: 2.098962e-02
+L-BFGS Iteration: 4900, Loss: 3.260286e-06, Relative L2 Error: 2.070622e-02
+L-BFGS Iteration: 5000, Loss: 3.101809e-06, Relative L2 Error: 2.052511e-02
+L-BFGS Iteration: 5100, Loss: 2.980595e-06, Relative L2 Error: 2.065211e-02
+L-BFGS Iteration: 5200, Loss: 2.857880e-06, Relative L2 Error: 2.031789e-02
+L-BFGS Iteration: 5300, Loss: 2.744466e-06, Relative L2 Error: 2.191709e-02
+L-BFGS Iteration: 5400, Loss: 2.666525e-06, Relative L2 Error: 1.958539e-02
+L-BFGS Iteration: 5500, Loss: 2.582902e-06, Relative L2 Error: 1.999803e-02
+L-BFGS Iteration: 5600, Loss: 2.489581e-06, Relative L2 Error: 2.173263e-02
+L-BFGS Iteration: 5700, Loss: 2.404048e-06, Relative L2 Error: 2.163070e-02
+L-BFGS Iteration: 5800, Loss: 2.320889e-06, Relative L2 Error: 1.995522e-02
+L-BFGS Iteration: 5900, Loss: 2.246398e-06, Relative L2 Error: 1.988837e-02
+L-BFGS Iteration: 6000, Loss: 2.185360e-06, Relative L2 Error: 2.298039e-02
+L-BFGS Iteration: 6100, Loss: 2.124687e-06, Relative L2 Error: 2.023123e-02
+L-BFGS Iteration: 6200, Loss: 2.056218e-06, Relative L2 Error: 2.068898e-02
+L-BFGS Iteration: 6300, Loss: 1.993130e-06, Relative L2 Error: 2.004747e-02
+L-BFGS Iteration: 6400, Loss: 1.946372e-06, Relative L2 Error: 1.984336e-02
+L-BFGS Iteration: 6500, Loss: 1.889969e-06, Relative L2 Error: 2.080769e-02
+L-BFGS Iteration: 6600, Loss: 1.833857e-06, Relative L2 Error: 2.052637e-02
+L-BFGS training completed after 6636 iterations
+Model state saved to ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\model.pth
+Training completed successfully!
+Relative L2 error (eval data): 2.13e-02
+Saved solution comparison heatmaps to: ./checkpoints/heat3d_exact\2026-03-07_18-33-22-482607\solution_comparison_heat3d.png

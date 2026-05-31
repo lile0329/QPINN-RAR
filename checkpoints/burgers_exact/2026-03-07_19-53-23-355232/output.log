@@ -1,0 +1,279 @@
+Random seed set to: 487
+Solving Burgers equation: u_t + u*u_x = nu*u_xx with nu=0.01
+Domain: (x, t) = [-1, 1] x [0, 1]
+Using exact solution for boundary and initial conditions
+checkpoint path: self.log_path='./checkpoints/burgers_exact\\2026-03-07_19-53-23-355232'
+Using Classical Solver2
+The settings used:
+batch_size : 64
+epochs : 20000
+lr : 0.001
+seed : 487
+print_every : 100
+log_path : ./checkpoints/burgers_exact
+input_dim : 2
+output_dim : 1
+num_qubits : 5
+hidden_dim : 20
+num_quantum_layers : 1
+classic_network : [2, 20, 1]
+q_ansatz : cross_mesh
+mode : hybrid
+activation : tanh
+shots : None
+problem : burgers_exact
+solver : Classical2
+device : cpu
+method : None
+cutoff_dim : 20
+class : CVNeuralNetwork1
+encoding : angle
+use_rar : False
+rar_eval_freq : 2000
+rar_threshold : 0.0005
+rar_num_candidates : 10000
+rar_num_add : 100
+use_hybrid_optimizer : True
+adam_iterations : 10000
+use_scipy_lbfgs : True
+lbfgs_lr : 1
+lbfgs_line_search : strong_wolfe
+lbfgs_tolerance_grad : 1e-05
+lbfgs_tolerance_change : 1e-07
+lbfgs_maxiter : 10000
+lbfgs_factr : 1000.0
+lbfgs_pgtol : 1e-14
+lbfgs_maxls : 50
+lbfgs_m : 100
+lbfgs_eval_every : 100
+nx : 200
+nt : 200
+domainN : 500
+leftN : 50
+rightN : 50
+initialN : 50
+eval_total_points : 10000
+Total number of parameters: 2181
+Iteration: 0, loss_r = 2.6e-02 ,  loss_bc = 4.6e-02,  loss_ic = 3.1e-02,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 9.6e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 100, loss_r = 9.4e-04 ,  loss_bc = 4.8e-04,  loss_ic = 1.7e-02,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 7.6e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 200, loss_r = 1.6e-03 ,  loss_bc = 1.5e-04,  loss_ic = 4.7e-03,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 4.0e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 300, loss_r = 1.3e-03 ,  loss_bc = 4.7e-04,  loss_ic = 5.4e-03,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 3.9e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 400, loss_r = 1.2e-03 ,  loss_bc = 3.7e-04,  loss_ic = 3.8e-03,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 3.9e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 500, loss_r = 8.9e-04 ,  loss_bc = 3.5e-04,  loss_ic = 3.3e-03,  lr = 1.0e-03, time_taken = 1.0e-02, rel_l2_error = 3.8e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 600, loss_r = 7.7e-04 ,  loss_bc = 6.2e-04,  loss_ic = 3.7e-03,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 3.5e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 700, loss_r = 5.1e-04 ,  loss_bc = 2.5e-04,  loss_ic = 4.7e-03,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 3.5e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 800, loss_r = 4.3e-04 ,  loss_bc = 2.9e-04,  loss_ic = 4.1e-03,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 2.9e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 900, loss_r = 3.0e-04 ,  loss_bc = 1.2e-04,  loss_ic = 2.8e-03,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 2.9e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1000, loss_r = 3.6e-04 ,  loss_bc = 7.7e-05,  loss_ic = 3.2e-03,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 3.0e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1100, loss_r = 2.8e-04 ,  loss_bc = 5.9e-05,  loss_ic = 1.9e-03,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 2.9e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1200, loss_r = 3.7e-04 ,  loss_bc = 8.1e-05,  loss_ic = 1.3e-03,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 2.3e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1300, loss_r = 4.0e-04 ,  loss_bc = 6.6e-05,  loss_ic = 1.7e-03,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 2.4e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1400, loss_r = 3.2e-04 ,  loss_bc = 1.1e-04,  loss_ic = 1.2e-03,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 2.0e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1500, loss_r = 3.6e-04 ,  loss_bc = 2.7e-05,  loss_ic = 1.3e-03,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1600, loss_r = 2.6e-04 ,  loss_bc = 7.8e-05,  loss_ic = 8.1e-04,  lr = 1.0e-03, time_taken = 1.0e-02, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1700, loss_r = 1.8e-04 ,  loss_bc = 1.3e-05,  loss_ic = 3.9e-04,  lr = 1.0e-03, time_taken = 1.3e-02, rel_l2_error = 1.3e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1800, loss_r = 1.8e-04 ,  loss_bc = 1.6e-05,  loss_ic = 3.1e-04,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.0e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 1900, loss_r = 1.2e-04 ,  loss_bc = 7.4e-06,  loss_ic = 2.6e-04,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.1e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2000, loss_r = 1.8e-04 ,  loss_bc = 6.6e-06,  loss_ic = 1.4e-04,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 6.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2100, loss_r = 8.4e-05 ,  loss_bc = 9.9e-06,  loss_ic = 6.7e-05,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 5.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2200, loss_r = 8.6e-05 ,  loss_bc = 3.7e-05,  loss_ic = 8.9e-05,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 3.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2300, loss_r = 8.8e-05 ,  loss_bc = 8.9e-06,  loss_ic = 3.0e-05,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 4.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2400, loss_r = 8.9e-05 ,  loss_bc = 2.3e-05,  loss_ic = 5.7e-05,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 3.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2500, loss_r = 6.3e-05 ,  loss_bc = 3.5e-06,  loss_ic = 3.2e-05,  lr = 1.0e-03, time_taken = 1.9e-02, rel_l2_error = 2.6e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2600, loss_r = 3.9e-05 ,  loss_bc = 5.5e-06,  loss_ic = 3.0e-05,  lr = 1.0e-03, time_taken = 1.9e-02, rel_l2_error = 3.9e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2700, loss_r = 3.3e-05 ,  loss_bc = 9.6e-06,  loss_ic = 2.1e-05,  lr = 1.0e-03, time_taken = 2.2e-02, rel_l2_error = 2.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2800, loss_r = 2.1e-05 ,  loss_bc = 1.8e-06,  loss_ic = 1.7e-05,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 2.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 2900, loss_r = 3.0e-05 ,  loss_bc = 4.2e-06,  loss_ic = 1.6e-05,  lr = 1.0e-03, time_taken = 1.9e-02, rel_l2_error = 2.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3000, loss_r = 2.1e-05 ,  loss_bc = 3.4e-06,  loss_ic = 1.4e-05,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.9e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3100, loss_r = 1.7e-05 ,  loss_bc = 1.8e-06,  loss_ic = 1.3e-05,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 1.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3200, loss_r = 1.8e-05 ,  loss_bc = 7.1e-06,  loss_ic = 1.3e-05,  lr = 1.0e-03, time_taken = 1.3e-02, rel_l2_error = 1.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3300, loss_r = 1.3e-05 ,  loss_bc = 6.5e-07,  loss_ic = 7.9e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 1.9e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3400, loss_r = 1.6e-05 ,  loss_bc = 9.5e-07,  loss_ic = 7.5e-06,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3500, loss_r = 1.7e-05 ,  loss_bc = 1.7e-06,  loss_ic = 1.0e-05,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3600, loss_r = 9.0e-06 ,  loss_bc = 7.9e-07,  loss_ic = 4.9e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3700, loss_r = 1.5e-05 ,  loss_bc = 1.1e-06,  loss_ic = 6.1e-06,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 1.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3800, loss_r = 5.8e-06 ,  loss_bc = 2.5e-06,  loss_ic = 4.7e-06,  lr = 1.0e-03, time_taken = 2.1e-02, rel_l2_error = 1.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 3900, loss_r = 8.4e-06 ,  loss_bc = 5.7e-07,  loss_ic = 6.6e-06,  lr = 1.0e-03, time_taken = 2.0e-02, rel_l2_error = 1.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4000, loss_r = 1.3e-05 ,  loss_bc = 1.5e-06,  loss_ic = 8.4e-06,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 9.2e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4100, loss_r = 1.1e-05 ,  loss_bc = 3.8e-06,  loss_ic = 3.2e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 7.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4200, loss_r = 6.6e-06 ,  loss_bc = 3.5e-07,  loss_ic = 7.2e-06,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4300, loss_r = 8.9e-06 ,  loss_bc = 1.5e-06,  loss_ic = 3.1e-06,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 1.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4400, loss_r = 1.4e-05 ,  loss_bc = 3.6e-06,  loss_ic = 4.6e-06,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 1.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4500, loss_r = 7.9e-06 ,  loss_bc = 7.3e-07,  loss_ic = 6.2e-06,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 9.2e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4600, loss_r = 9.2e-06 ,  loss_bc = 4.3e-06,  loss_ic = 6.6e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4700, loss_r = 8.9e-06 ,  loss_bc = 3.1e-06,  loss_ic = 4.9e-06,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 1.9e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4800, loss_r = 1.3e-05 ,  loss_bc = 9.5e-06,  loss_ic = 1.3e-05,  lr = 1.0e-03, time_taken = 1.2e-02, rel_l2_error = 2.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 4900, loss_r = 6.5e-06 ,  loss_bc = 9.0e-06,  loss_ic = 4.2e-06,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 1.6e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5000, loss_r = 1.1e-05 ,  loss_bc = 4.0e-06,  loss_ic = 8.8e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 1.9e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5100, loss_r = 5.5e-06 ,  loss_bc = 6.7e-06,  loss_ic = 2.2e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5200, loss_r = 7.8e-06 ,  loss_bc = 5.0e-06,  loss_ic = 4.3e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5300, loss_r = 8.0e-06 ,  loss_bc = 1.2e-05,  loss_ic = 5.3e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5400, loss_r = 5.5e-06 ,  loss_bc = 3.7e-06,  loss_ic = 1.9e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.4e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5500, loss_r = 6.7e-06 ,  loss_bc = 8.5e-06,  loss_ic = 5.9e-06,  lr = 1.0e-03, time_taken = 1.3e-02, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5600, loss_r = 5.1e-06 ,  loss_bc = 2.9e-06,  loss_ic = 2.0e-06,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5700, loss_r = 5.0e-06 ,  loss_bc = 6.5e-07,  loss_ic = 1.4e-06,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 1.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5800, loss_r = 5.2e-06 ,  loss_bc = 3.0e-06,  loss_ic = 1.8e-06,  lr = 1.0e-03, time_taken = 1.2e-02, rel_l2_error = 8.4e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 5900, loss_r = 9.1e-06 ,  loss_bc = 7.2e-06,  loss_ic = 5.1e-06,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 7.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6000, loss_r = 4.7e-06 ,  loss_bc = 1.4e-05,  loss_ic = 4.5e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6100, loss_r = 3.0e-06 ,  loss_bc = 5.2e-06,  loss_ic = 4.2e-06,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 1.6e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6200, loss_r = 7.6e-06 ,  loss_bc = 1.1e-06,  loss_ic = 4.1e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6300, loss_r = 1.0e-05 ,  loss_bc = 5.7e-06,  loss_ic = 1.1e-05,  lr = 1.0e-03, time_taken = 1.2e-02, rel_l2_error = 1.6e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6400, loss_r = 4.6e-06 ,  loss_bc = 6.5e-06,  loss_ic = 3.4e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6500, loss_r = 4.5e-06 ,  loss_bc = 3.0e-07,  loss_ic = 2.2e-06,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 6.1e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6600, loss_r = 5.7e-06 ,  loss_bc = 8.6e-06,  loss_ic = 9.9e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 1.4e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6700, loss_r = 3.5e-06 ,  loss_bc = 2.3e-06,  loss_ic = 1.6e-06,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 9.2e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6800, loss_r = 4.5e-06 ,  loss_bc = 4.4e-07,  loss_ic = 1.1e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 1.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 6900, loss_r = 1.4e-05 ,  loss_bc = 2.6e-05,  loss_ic = 1.2e-05,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 1.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7000, loss_r = 3.8e-06 ,  loss_bc = 9.4e-07,  loss_ic = 3.3e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 7.6e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7100, loss_r = 5.8e-06 ,  loss_bc = 2.7e-06,  loss_ic = 1.6e-06,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 5.4e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7200, loss_r = 1.3e-05 ,  loss_bc = 3.8e-06,  loss_ic = 6.6e-06,  lr = 1.0e-03, time_taken = 9.0e-03, rel_l2_error = 1.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7300, loss_r = 5.6e-06 ,  loss_bc = 2.2e-06,  loss_ic = 4.7e-06,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 4.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7400, loss_r = 3.2e-06 ,  loss_bc = 3.3e-06,  loss_ic = 3.7e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 6.4e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7500, loss_r = 3.0e-06 ,  loss_bc = 2.0e-07,  loss_ic = 8.1e-07,  lr = 1.0e-03, time_taken = 1.3e-02, rel_l2_error = 5.3e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7600, loss_r = 3.8e-06 ,  loss_bc = 1.4e-06,  loss_ic = 5.8e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7700, loss_r = 6.5e-06 ,  loss_bc = 9.9e-06,  loss_ic = 5.5e-06,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 2.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7800, loss_r = 1.1e-05 ,  loss_bc = 8.4e-07,  loss_ic = 8.2e-06,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 1.4e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 7900, loss_r = 3.7e-06 ,  loss_bc = 4.6e-06,  loss_ic = 2.4e-06,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 1.4e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8000, loss_r = 4.6e-06 ,  loss_bc = 3.3e-06,  loss_ic = 8.0e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.6e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8100, loss_r = 5.6e-06 ,  loss_bc = 1.1e-06,  loss_ic = 6.7e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 8.3e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8200, loss_r = 1.1e-05 ,  loss_bc = 8.2e-06,  loss_ic = 6.6e-06,  lr = 1.0e-03, time_taken = 1.4e-02, rel_l2_error = 2.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8300, loss_r = 9.5e-06 ,  loss_bc = 2.6e-05,  loss_ic = 1.1e-05,  lr = 1.0e-03, time_taken = 1.3e-02, rel_l2_error = 2.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8400, loss_r = 1.1e-06 ,  loss_bc = 1.6e-07,  loss_ic = 8.6e-07,  lr = 1.0e-03, time_taken = 1.7e-02, rel_l2_error = 6.3e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8500, loss_r = 3.3e-06 ,  loss_bc = 6.5e-06,  loss_ic = 3.6e-06,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 7.6e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8600, loss_r = 4.8e-06 ,  loss_bc = 2.7e-06,  loss_ic = 4.7e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8700, loss_r = 8.7e-06 ,  loss_bc = 1.5e-06,  loss_ic = 1.3e-05,  lr = 1.0e-03, time_taken = 1.2e-02, rel_l2_error = 2.4e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8800, loss_r = 1.2e-05 ,  loss_bc = 1.1e-06,  loss_ic = 3.3e-06,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 2.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 8900, loss_r = 2.3e-06 ,  loss_bc = 1.1e-07,  loss_ic = 1.5e-06,  lr = 1.0e-03, time_taken = 1.8e-02, rel_l2_error = 1.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9000, loss_r = 8.3e-06 ,  loss_bc = 2.2e-06,  loss_ic = 4.0e-06,  lr = 1.0e-03, time_taken = 9.3e-03, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9100, loss_r = 5.6e-06 ,  loss_bc = 7.8e-06,  loss_ic = 1.0e-05,  lr = 1.0e-03, time_taken = 2.1e-02, rel_l2_error = 8.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9200, loss_r = 4.1e-06 ,  loss_bc = 9.4e-06,  loss_ic = 6.2e-06,  lr = 1.0e-03, time_taken = 1.0e-02, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9300, loss_r = 1.5e-06 ,  loss_bc = 5.2e-06,  loss_ic = 6.7e-06,  lr = 1.0e-03, time_taken = 1.0e-02, rel_l2_error = 9.4e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9400, loss_r = 3.5e-05 ,  loss_bc = 4.0e-05,  loss_ic = 4.6e-05,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.9e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9500, loss_r = 1.7e-06 ,  loss_bc = 3.5e-06,  loss_ic = 2.2e-06,  lr = 1.0e-03, time_taken = 1.0e-02, rel_l2_error = 6.1e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9600, loss_r = 2.8e-06 ,  loss_bc = 3.1e-06,  loss_ic = 3.8e-06,  lr = 1.0e-03, time_taken = 1.1e-02, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9700, loss_r = 2.1e-06 ,  loss_bc = 1.3e-06,  loss_ic = 1.9e-06,  lr = 1.0e-03, time_taken = 5.0e-03, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9800, loss_r = 5.0e-06 ,  loss_bc = 1.4e-05,  loss_ic = 5.7e-06,  lr = 1.0e-03, time_taken = 1.6e-02, rel_l2_error = 1.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Iteration: 9900, loss_r = 1.4e-06 ,  loss_bc = 1.2e-06,  loss_ic = 1.6e-06,  lr = 1.0e-03, time_taken = 1.5e-02, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+
+=== Switching to LBFGS optimizer at iteration 10000 ===
+Using scipy L-BFGS-B optimizer (bburgers_hybrid_trainer.py approach)
+Optimizer: L-BFGS-B (maxiter=10000, factr=1000.0, m=100, maxls=50, pgtol=1e-14)
+L-BFGS Iteration: 0, Loss: 2.101692e-05
+L-BFGS Iteration: 1, Loss: 4.984279e-06, Relative L2 Error: 7.755895e-03
+L-BFGS: Time for 100 iterations = 3.4606 s
+L-BFGS Iteration: 100, Loss: 1.167441e-06, Relative L2 Error: 3.468939e-03
+L-BFGS Iteration: 200, Loss: 5.696729e-07, Relative L2 Error: 1.874277e-03
+L-BFGS Iteration: 300, Loss: 3.213810e-07, Relative L2 Error: 1.119843e-03
+L-BFGS Iteration: 400, Loss: 1.702532e-07, Relative L2 Error: 7.922939e-04
+L-BFGS Iteration: 500, Loss: 9.841409e-08, Relative L2 Error: 6.092683e-04
+L-BFGS Iteration: 600, Loss: 6.435546e-08, Relative L2 Error: 4.269248e-04
+L-BFGS Iteration: 700, Loss: 4.848084e-08, Relative L2 Error: 3.471337e-04
+L-BFGS Iteration: 800, Loss: 4.135777e-08, Relative L2 Error: 2.910912e-04
+L-BFGS Iteration: 900, Loss: 3.580210e-08, Relative L2 Error: 3.898497e-04
+L-BFGS optimization finished after 937 iterations.
+L-BFGS training completed after 937 iterations
+Model state saved to ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\model.pth
+Training completed successfully!
+Evaluating on 40000 points using chunk size 500
+RelL2_U%  : 3.294e-02 
+Saved solution comparison heatmaps to: ./checkpoints/burgers_exact\2026-03-07_19-53-23-355232\solution_comparison_burgers_exact.png

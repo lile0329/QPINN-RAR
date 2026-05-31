@@ -1,0 +1,2 @@
+problem,run_id,output_log,final_iteration,final_rel_l2_error,best_rel_l2_error,best_rel_l2_iteration,seed
+heat3d_exact,2026-03-05_17-30-55-641613,checkpoints\heat3d_exact\2026-03-05_17-30-55-641613\output.log,6443,0.00831,0.008308725,16400,1

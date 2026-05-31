@@ -1,0 +1,702 @@
+Random seed set to: 114514
+Solving Burgers equation: u_t + u*u_x = nu*u_xx with nu=0.01
+Domain: (x, t) = [-1, 1] x [0, 1]
+Using exact solution for boundary and initial conditions
+Using DV Solver
+The settings used:
+batch_size : 64
+epochs : 20000
+lr : 0.001
+seed : 114514
+print_every : 100
+log_path : ./checkpoints/burgers_exact
+input_dim : 2
+output_dim : 1
+num_qubits : 5
+hidden_dim : 20
+num_quantum_layers : 1
+classic_network : [2, 20, 1]
+q_ansatz : cross_mesh
+mode : hybrid
+activation : tanh
+shots : None
+problem : burgers_exact
+solver : DV
+device : cpu
+method : None
+cutoff_dim : 20
+class : CVNeuralNetwork1
+encoding : angle
+use_rar : True
+rar_eval_freq : 2000
+rar_threshold : 0.0005
+rar_num_candidates : 10000
+rar_num_add : 100
+use_hybrid_optimizer : True
+adam_iterations : 10000
+use_scipy_lbfgs : True
+lbfgs_lr : 1
+lbfgs_line_search : strong_wolfe
+lbfgs_tolerance_grad : 1e-05
+lbfgs_tolerance_change : 1e-07
+lbfgs_maxiter : 10000
+lbfgs_factr : 1000.0
+lbfgs_pgtol : 1e-14
+lbfgs_maxls : 50
+lbfgs_m : 100
+lbfgs_eval_every : 100
+nx : 200
+nt : 200
+domainN : 500
+leftN : 50
+rightN : 50
+initialN : 50
+eval_total_points : 10000
+Total number of parameters: 1186
+The circuit used in the study:
+Iteration: 0, loss_r = 1.0e-05 ,  loss_bc = 2.5e-02,  loss_ic = 7.8e-02,  lr = 1.0e-03, time_taken = 1.9e+00, rel_l2_error = 1.1e+00
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 100, loss_r = 5.5e-04 ,  loss_bc = 6.0e-04,  loss_ic = 2.8e-02,  lr = 1.0e-03, time_taken = 3.3e-01, rel_l2_error = 9.8e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 200, loss_r = 1.5e-03 ,  loss_bc = 1.8e-04,  loss_ic = 4.5e-03,  lr = 1.0e-03, time_taken = 4.2e-01, rel_l2_error = 4.1e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 300, loss_r = 2.2e-03 ,  loss_bc = 3.0e-04,  loss_ic = 3.8e-03,  lr = 1.0e-03, time_taken = 3.7e-01, rel_l2_error = 3.5e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 400, loss_r = 9.0e-04 ,  loss_bc = 1.4e-04,  loss_ic = 2.5e-03,  lr = 1.0e-03, time_taken = 3.6e-01, rel_l2_error = 3.4e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 500, loss_r = 8.0e-04 ,  loss_bc = 1.4e-04,  loss_ic = 3.2e-03,  lr = 1.0e-03, time_taken = 6.3e-01, rel_l2_error = 3.0e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 600, loss_r = 6.2e-04 ,  loss_bc = 6.7e-05,  loss_ic = 2.6e-03,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 2.9e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 700, loss_r = 6.4e-04 ,  loss_bc = 6.8e-05,  loss_ic = 2.7e-03,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 2.6e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 800, loss_r = 4.9e-04 ,  loss_bc = 5.8e-05,  loss_ic = 3.6e-03,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 2.5e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 900, loss_r = 6.2e-04 ,  loss_bc = 6.7e-05,  loss_ic = 1.4e-03,  lr = 1.0e-03, time_taken = 3.3e-01, rel_l2_error = 2.3e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1000, loss_r = 3.6e-04 ,  loss_bc = 2.4e-05,  loss_ic = 7.4e-04,  lr = 1.0e-03, time_taken = 3.3e-01, rel_l2_error = 2.1e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1100, loss_r = 4.2e-04 ,  loss_bc = 7.9e-05,  loss_ic = 1.6e-03,  lr = 1.0e-03, time_taken = 3.9e-01, rel_l2_error = 1.9e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1200, loss_r = 2.7e-04 ,  loss_bc = 1.5e-05,  loss_ic = 8.5e-04,  lr = 1.0e-03, time_taken = 4.3e-01, rel_l2_error = 1.7e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1300, loss_r = 3.5e-04 ,  loss_bc = 2.9e-05,  loss_ic = 7.6e-04,  lr = 1.0e-03, time_taken = 4.2e-01, rel_l2_error = 1.5e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1400, loss_r = 3.3e-04 ,  loss_bc = 4.2e-05,  loss_ic = 9.9e-04,  lr = 1.0e-03, time_taken = 4.3e-01, rel_l2_error = 1.3e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1500, loss_r = 3.0e-04 ,  loss_bc = 3.2e-05,  loss_ic = 4.0e-04,  lr = 1.0e-03, time_taken = 6.3e-01, rel_l2_error = 1.1e-01
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1600, loss_r = 3.4e-04 ,  loss_bc = 4.7e-05,  loss_ic = 6.2e-04,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 8.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1700, loss_r = 2.4e-04 ,  loss_bc = 5.7e-05,  loss_ic = 4.5e-04,  lr = 1.0e-03, time_taken = 4.6e-01, rel_l2_error = 6.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1800, loss_r = 1.4e-04 ,  loss_bc = 7.2e-06,  loss_ic = 2.8e-04,  lr = 1.0e-03, time_taken = 4.9e-01, rel_l2_error = 5.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 1900, loss_r = 2.1e-04 ,  loss_bc = 2.2e-05,  loss_ic = 1.9e-04,  lr = 1.0e-03, time_taken = 5.5e-01, rel_l2_error = 4.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 2000, loss_r = 1.1e-04 ,  loss_bc = 1.3e-05,  loss_ic = 6.0e-05,  lr = 1.0e-03, time_taken = 4.6e-01, rel_l2_error = 4.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+
+=== RAR Evaluation at iteration 2000 ===
+Mean residual: 2.727e-01
+Adding 100 new point(s) with highest residuals:
+  Point 1: [0.52850467 0.34898317], Residual: 2.853e+00
+  Point 2: [0.70298916 0.36845887], Residual: 2.830e+00
+  Point 3: [0.22616565 0.35561776], Residual: 2.650e+00
+  Point 4: [0.09275603 0.41696823], Residual: 2.579e+00
+  Point 5: [ 0.7929946  -0.67840445], Residual: 2.488e+00
+  Point 6: [0.48199642 0.27268815], Residual: 2.483e+00
+  Point 7: [0.5010351 0.4872601], Residual: 2.480e+00
+  Point 8: [0.6806013 0.5119276], Residual: 2.470e+00
+  Point 9: [ 0.74069726 -0.6727648 ], Residual: 2.380e+00
+  Point 10: [0.18514961 0.20986462], Residual: 2.377e+00
+  Point 11: [0.904475   0.50230587], Residual: 2.377e+00
+  Point 12: [ 0.9474742  -0.70452535], Residual: 2.365e+00
+  Point 13: [ 0.45461982 -0.45993257], Residual: 2.317e+00
+  Point 14: [0.9138384  0.39391744], Residual: 2.293e+00
+  Point 15: [0.96308327 0.45614254], Residual: 2.245e+00
+  Point 16: [ 0.12305546 -0.5433376 ], Residual: 2.232e+00
+  Point 17: [ 0.87010497 -0.45035064], Residual: 2.219e+00
+  Point 18: [0.5740339  0.47502315], Residual: 2.164e+00
+  Point 19: [ 0.56619006 -0.61267436], Residual: 2.148e+00
+  Point 20: [ 0.6801632  -0.59307134], Residual: 2.146e+00
+  Point 21: [0.7644086 0.5726973], Residual: 2.131e+00
+  Point 22: [ 0.15547848 -0.541919  ], Residual: 2.120e+00
+  Point 23: [ 0.47425777 -0.44529033], Residual: 2.116e+00
+  Point 24: [0.90051097 0.66241944], Residual: 2.112e+00
+  Point 25: [ 0.6193915 -0.5120747], Residual: 2.106e+00
+  Point 26: [ 0.73153865 -0.66643727], Residual: 2.103e+00
+  Point 27: [0.00791782 0.27417052], Residual: 2.103e+00
+  Point 28: [0.29861408 0.3876301 ], Residual: 2.086e+00
+  Point 29: [0.06819153 0.4615867 ], Residual: 2.081e+00
+  Point 30: [ 0.07656407 -0.5455822 ], Residual: 2.077e+00
+  Point 31: [0.21474361 0.47012615], Residual: 2.074e+00
+  Point 32: [ 0.03408211 -0.39334643], Residual: 2.027e+00
+  Point 33: [0.57230085 0.35985363], Residual: 2.025e+00
+  Point 34: [0.20992124 0.3230064 ], Residual: 2.001e+00
+  Point 35: [ 0.8143558  -0.65177953], Residual: 1.993e+00
+  Point 36: [0.12653774 0.4690566 ], Residual: 1.959e+00
+  Point 37: [0.18235439 0.3929001 ], Residual: 1.946e+00
+  Point 38: [0.08142996 0.15313232], Residual: 1.938e+00
+  Point 39: [0.81686324 0.49415147], Residual: 1.925e+00
+  Point 40: [0.03624505 0.2565155 ], Residual: 1.922e+00
+  Point 41: [0.83907413 0.5593606 ], Residual: 1.921e+00
+  Point 42: [0.5587434 0.3583182], Residual: 1.916e+00
+  Point 43: [ 0.7370359 -0.5817523], Residual: 1.895e+00
+  Point 44: [ 0.35866296 -0.5126897 ], Residual: 1.881e+00
+  Point 45: [ 0.4206437 -0.5085454], Residual: 1.872e+00
+  Point 46: [0.8670215 0.6705471], Residual: 1.836e+00
+  Point 47: [0.2635582 0.480402 ], Residual: 1.835e+00
+  Point 48: [ 0.37980163 -0.6060288 ], Residual: 1.832e+00
+  Point 49: [0.6269456  0.18770981], Residual: 1.825e+00
+  Point 50: [0.24706209 0.29055905], Residual: 1.808e+00
+  Point 51: [0.22850859 0.25360715], Residual: 1.788e+00
+  Point 52: [ 0.45276606 -0.5010793 ], Residual: 1.785e+00
+  Point 53: [ 0.6144312 -0.5702629], Residual: 1.773e+00
+  Point 54: [ 0.09422463 -0.44703627], Residual: 1.740e+00
+  Point 55: [0.40084636 0.36469507], Residual: 1.738e+00
+  Point 56: [ 0.05749983 -0.29646838], Residual: 1.737e+00
+  Point 57: [ 0.5283578 -0.4420544], Residual: 1.718e+00
+  Point 58: [0.07468349 0.33437502], Residual: 1.717e+00
+  Point 59: [ 0.9025811  -0.56103265], Residual: 1.716e+00
+  Point 60: [0.42120016 0.278378  ], Residual: 1.712e+00
+  Point 61: [0.3807565  0.46553314], Residual: 1.709e+00
+  Point 62: [0.40370852 0.24333453], Residual: 1.708e+00
+  Point 63: [0.02458537 0.2094512 ], Residual: 1.699e+00
+  Point 64: [0.56901896 0.50757575], Residual: 1.699e+00
+  Point 65: [0.4855482  0.44170284], Residual: 1.694e+00
+  Point 66: [ 0.93912816 -0.68760836], Residual: 1.693e+00
+  Point 67: [0.76582485 0.4328189 ], Residual: 1.692e+00
+  Point 68: [0.5856167  0.45618832], Residual: 1.689e+00
+  Point 69: [ 0.5786032  -0.61510444], Residual: 1.687e+00
+  Point 70: [0.9408954  0.42439628], Residual: 1.677e+00
+  Point 71: [ 0.7491064  -0.58118117], Residual: 1.672e+00
+  Point 72: [ 0.22245145 -0.61611426], Residual: 1.664e+00
+  Point 73: [0.886926   0.36660683], Residual: 1.659e+00
+  Point 74: [0.1566369 0.426556 ], Residual: 1.647e+00
+  Point 75: [ 0.36954552 -0.5636889 ], Residual: 1.643e+00
+  Point 76: [0.5555928 0.4508878], Residual: 1.641e+00
+  Point 77: [0.75574416 0.54655004], Residual: 1.639e+00
+  Point 78: [0.6550871  0.30276608], Residual: 1.638e+00
+  Point 79: [0.2349624  0.24728489], Residual: 1.630e+00
+  Point 80: [ 0.4103589  -0.47927237], Residual: 1.624e+00
+  Point 81: [ 0.10606378 -0.4639163 ], Residual: 1.623e+00
+  Point 82: [ 0.09454644 -0.58622646], Residual: 1.617e+00
+  Point 83: [0.05139124 0.35702682], Residual: 1.615e+00
+  Point 84: [ 0.6313221  -0.51915693], Residual: 1.606e+00
+  Point 85: [ 0.961611 -0.644845], Residual: 1.605e+00
+  Point 86: [0.20174176 0.20921183], Residual: 1.601e+00
+  Point 87: [ 0.98183805 -0.74521565], Residual: 1.600e+00
+  Point 88: [0.53381896 0.6139785 ], Residual: 1.600e+00
+  Point 89: [0.19233179 0.4607327 ], Residual: 1.589e+00
+  Point 90: [0.01545531 0.42089677], Residual: 1.582e+00
+  Point 91: [0.4129539  0.35732222], Residual: 1.578e+00
+  Point 92: [0.28544807 0.46613693], Residual: 1.578e+00
+  Point 93: [ 0.8503279 -0.5838584], Residual: 1.573e+00
+  Point 94: [0.59233195 0.46386528], Residual: 1.572e+00
+  Point 95: [ 0.50818825 -0.5417832 ], Residual: 1.563e+00
+  Point 96: [0.521951   0.49232173], Residual: 1.561e+00
+  Point 97: [0.3446278 0.4543022], Residual: 1.560e+00
+  Point 98: [ 0.9726746  -0.60006154], Residual: 1.558e+00
+  Point 99: [0.27122402 0.4406333 ], Residual: 1.553e+00
+  Point 100: [ 0.97953683 -0.5848706 ], Residual: 1.552e+00
+Total adaptive points: 100
+
+Iteration: 2100, loss_r = 8.3e-05 ,  loss_bc = 1.7e-06,  loss_ic = 7.4e-05,  lr = 1.0e-03, time_taken = 4.3e-01, rel_l2_error = 4.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 2200, loss_r = 5.0e-05 ,  loss_bc = 5.8e-06,  loss_ic = 6.6e-05,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 4.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 2300, loss_r = 4.4e-05 ,  loss_bc = 2.1e-06,  loss_ic = 4.5e-05,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 3.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 2400, loss_r = 5.5e-05 ,  loss_bc = 2.9e-06,  loss_ic = 3.5e-05,  lr = 1.0e-03, time_taken = 3.7e-01, rel_l2_error = 2.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 2500, loss_r = 5.8e-05 ,  loss_bc = 2.9e-06,  loss_ic = 6.1e-05,  lr = 1.0e-03, time_taken = 5.0e-01, rel_l2_error = 2.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 2600, loss_r = 7.2e-05 ,  loss_bc = 5.0e-06,  loss_ic = 2.5e-05,  lr = 1.0e-03, time_taken = 5.0e-01, rel_l2_error = 2.6e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 2700, loss_r = 3.5e-05 ,  loss_bc = 5.5e-06,  loss_ic = 1.4e-05,  lr = 1.0e-03, time_taken = 6.0e-01, rel_l2_error = 2.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 2800, loss_r = 3.2e-05 ,  loss_bc = 1.4e-06,  loss_ic = 2.1e-05,  lr = 1.0e-03, time_taken = 3.3e-01, rel_l2_error = 2.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 2900, loss_r = 4.0e-05 ,  loss_bc = 6.2e-06,  loss_ic = 3.1e-05,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 2.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3000, loss_r = 4.8e-05 ,  loss_bc = 1.2e-05,  loss_ic = 3.9e-05,  lr = 1.0e-03, time_taken = 3.3e-01, rel_l2_error = 2.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3100, loss_r = 3.2e-05 ,  loss_bc = 2.2e-06,  loss_ic = 2.4e-05,  lr = 1.0e-03, time_taken = 3.4e-01, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3200, loss_r = 4.5e-05 ,  loss_bc = 1.7e-06,  loss_ic = 2.2e-05,  lr = 1.0e-03, time_taken = 3.3e-01, rel_l2_error = 1.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3300, loss_r = 3.3e-05 ,  loss_bc = 3.5e-06,  loss_ic = 1.4e-05,  lr = 1.0e-03, time_taken = 3.3e-01, rel_l2_error = 2.9e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3400, loss_r = 2.4e-05 ,  loss_bc = 4.1e-06,  loss_ic = 2.0e-05,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 2.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3500, loss_r = 3.4e-05 ,  loss_bc = 4.3e-06,  loss_ic = 1.4e-05,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3600, loss_r = 3.0e-05 ,  loss_bc = 4.1e-06,  loss_ic = 1.9e-05,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3700, loss_r = 1.7e-05 ,  loss_bc = 2.8e-06,  loss_ic = 9.9e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3800, loss_r = 1.8e-05 ,  loss_bc = 9.9e-06,  loss_ic = 7.5e-06,  lr = 1.0e-03, time_taken = 3.3e-01, rel_l2_error = 1.8e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 3900, loss_r = 2.1e-05 ,  loss_bc = 5.3e-07,  loss_ic = 6.2e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.7e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 4000, loss_r = 1.5e-05 ,  loss_bc = 7.3e-07,  loss_ic = 8.1e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+
+=== RAR Evaluation at iteration 4000 ===
+Mean residual: 2.578e-01
+Adding 100 new point(s) with highest residuals:
+  Point 1: [0.57665485 0.39431512], Residual: 2.683e+00
+  Point 2: [ 0.9849322 -0.6092408], Residual: 2.677e+00
+  Point 3: [ 0.49338794 -0.4162997 ], Residual: 2.553e+00
+  Point 4: [0.5424836  0.57841766], Residual: 2.443e+00
+  Point 5: [0.43993646 0.49499536], Residual: 2.420e+00
+  Point 6: [ 0.927548   -0.64244366], Residual: 2.412e+00
+  Point 7: [ 0.43906337 -0.5004951 ], Residual: 2.376e+00
+  Point 8: [0.21866816 0.3594315 ], Residual: 2.369e+00
+  Point 9: [ 0.02739096 -0.34010816], Residual: 2.339e+00
+  Point 10: [0.80297196 0.37302184], Residual: 2.268e+00
+  Point 11: [ 0.93431205 -0.5441301 ], Residual: 2.250e+00
+  Point 12: [ 0.47431314 -0.5775819 ], Residual: 2.238e+00
+  Point 13: [ 0.43695003 -0.61653435], Residual: 2.224e+00
+  Point 14: [0.9819981 0.388129 ], Residual: 2.207e+00
+  Point 15: [ 0.5874147 -0.515532 ], Residual: 2.190e+00
+  Point 16: [ 0.9943954 -0.7066734], Residual: 2.142e+00
+  Point 17: [0.91714984 0.30209565], Residual: 2.102e+00
+  Point 18: [0.19644362 0.41791677], Residual: 2.100e+00
+  Point 19: [ 0.42129272 -0.56598556], Residual: 2.075e+00
+  Point 20: [ 0.22152561 -0.28190017], Residual: 1.995e+00
+  Point 21: [ 0.04539812 -0.47356403], Residual: 1.954e+00
+  Point 22: [ 0.74193746 -0.44376588], Residual: 1.949e+00
+  Point 23: [0.36306006 0.2693864 ], Residual: 1.939e+00
+  Point 24: [0.18469179 0.38272095], Residual: 1.939e+00
+  Point 25: [ 0.9257525  -0.61641896], Residual: 1.919e+00
+  Point 26: [ 0.21285331 -0.42278206], Residual: 1.898e+00
+  Point 27: [ 0.14381403 -0.8685771 ], Residual: 1.877e+00
+  Point 28: [ 0.39124453 -0.4811417 ], Residual: 1.863e+00
+  Point 29: [0.6911734 0.3977306], Residual: 1.857e+00
+  Point 30: [0.4581905  0.48125553], Residual: 1.832e+00
+  Point 31: [0.8057676 0.610535 ], Residual: 1.831e+00
+  Point 32: [0.16495204 0.16329992], Residual: 1.796e+00
+  Point 33: [ 0.69082934 -0.5124879 ], Residual: 1.790e+00
+  Point 34: [ 0.2113691  -0.52254164], Residual: 1.789e+00
+  Point 35: [0.3451997  0.28452277], Residual: 1.785e+00
+  Point 36: [ 0.7797504  -0.59815085], Residual: 1.777e+00
+  Point 37: [0.17037809 0.19411635], Residual: 1.763e+00
+  Point 38: [0.15373594 0.32712626], Residual: 1.746e+00
+  Point 39: [ 0.52183175 -0.68005   ], Residual: 1.734e+00
+  Point 40: [ 0.6517386  -0.57457614], Residual: 1.730e+00
+  Point 41: [0.40284705 0.52147996], Residual: 1.728e+00
+  Point 42: [ 0.40480667 -0.9038862 ], Residual: 1.719e+00
+  Point 43: [ 0.08122653 -0.533623  ], Residual: 1.707e+00
+  Point 44: [0.14940119 0.43106306], Residual: 1.696e+00
+  Point 45: [0.10729218 0.48615003], Residual: 1.691e+00
+  Point 46: [ 0.4653632  -0.45769465], Residual: 1.680e+00
+  Point 47: [0.07902485 0.3284545 ], Residual: 1.677e+00
+  Point 48: [0.44526172 0.620487  ], Residual: 1.677e+00
+  Point 49: [ 0.41753894 -0.442842  ], Residual: 1.676e+00
+  Point 50: [ 0.57826155 -0.7049649 ], Residual: 1.633e+00
+  Point 51: [0.846697  0.6412854], Residual: 1.633e+00
+  Point 52: [ 0.20019966 -0.973843  ], Residual: 1.623e+00
+  Point 53: [ 0.3989064  -0.56346107], Residual: 1.611e+00
+  Point 54: [0.50561345 0.59309137], Residual: 1.604e+00
+  Point 55: [0.36032504 0.27474797], Residual: 1.600e+00
+  Point 56: [0.5501544  0.45413244], Residual: 1.598e+00
+  Point 57: [0.28510803 0.38874054], Residual: 1.595e+00
+  Point 58: [0.7107627 0.3271587], Residual: 1.594e+00
+  Point 59: [0.06449205 0.24767911], Residual: 1.554e+00
+  Point 60: [0.74271864 0.42215955], Residual: 1.549e+00
+  Point 61: [ 0.3696121  -0.59899986], Residual: 1.545e+00
+  Point 62: [0.58553624 0.65552545], Residual: 1.541e+00
+  Point 63: [ 0.31915188 -0.92704165], Residual: 1.530e+00
+  Point 64: [0.71424776 0.5034777 ], Residual: 1.529e+00
+  Point 65: [0.8198378 0.2923727], Residual: 1.529e+00
+  Point 66: [0.3092264 0.2964301], Residual: 1.523e+00
+  Point 67: [0.289832  0.2858504], Residual: 1.515e+00
+  Point 68: [ 0.24950355 -0.35714126], Residual: 1.509e+00
+  Point 69: [ 0.48044926 -0.5655019 ], Residual: 1.498e+00
+  Point 70: [0.6530885 0.5845988], Residual: 1.493e+00
+  Point 71: [ 0.35786444 -0.9100542 ], Residual: 1.492e+00
+  Point 72: [0.34167325 0.3699013 ], Residual: 1.487e+00
+  Point 73: [0.35680026 0.424199  ], Residual: 1.476e+00
+  Point 74: [ 0.40459573 -0.5377538 ], Residual: 1.472e+00
+  Point 75: [0.22585791 0.31052303], Residual: 1.471e+00
+  Point 76: [ 0.24846089 -0.4230579 ], Residual: 1.469e+00
+  Point 77: [ 0.09320307 -0.42131174], Residual: 1.467e+00
+  Point 78: [ 0.720222  -0.6652036], Residual: 1.464e+00
+  Point 79: [0.892039  0.5551485], Residual: 1.464e+00
+  Point 80: [0.13302588 0.1646353 ], Residual: 1.460e+00
+  Point 81: [0.55690616 0.42800248], Residual: 1.457e+00
+  Point 82: [0.11606753 0.2399112 ], Residual: 1.453e+00
+  Point 83: [0.1852004  0.40741372], Residual: 1.449e+00
+  Point 84: [0.8905142  0.56194854], Residual: 1.448e+00
+  Point 85: [ 0.5714632 -0.5299524], Residual: 1.439e+00
+  Point 86: [0.9872007  0.62237024], Residual: 1.438e+00
+  Point 87: [0.6066441 0.3107916], Residual: 1.429e+00
+  Point 88: [0.1380511  0.38855755], Residual: 1.422e+00
+  Point 89: [0.931225  0.4030198], Residual: 1.413e+00
+  Point 90: [ 0.7620651 -0.641335 ], Residual: 1.412e+00
+  Point 91: [0.89649355 0.28602338], Residual: 1.409e+00
+  Point 92: [0.10709512 0.10256231], Residual: 1.405e+00
+  Point 93: [ 0.05054539 -0.85640776], Residual: 1.401e+00
+  Point 94: [ 0.5261211  -0.56448436], Residual: 1.400e+00
+  Point 95: [ 0.26338345 -0.46066594], Residual: 1.399e+00
+  Point 96: [0.93945426 0.23362386], Residual: 1.390e+00
+  Point 97: [ 0.24045336 -0.87068486], Residual: 1.384e+00
+  Point 98: [ 0.643401  -0.5762594], Residual: 1.379e+00
+  Point 99: [ 0.7810373  -0.61474025], Residual: 1.378e+00
+  Point 100: [ 0.1759221 -0.877432 ], Residual: 1.375e+00
+Total adaptive points: 200
+
+Iteration: 4100, loss_r = 1.4e-05 ,  loss_bc = 1.7e-06,  loss_ic = 7.8e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 4200, loss_r = 1.1e-05 ,  loss_bc = 2.0e-06,  loss_ic = 6.2e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.6e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 4300, loss_r = 1.0e-05 ,  loss_bc = 2.4e-06,  loss_ic = 5.6e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 4400, loss_r = 9.9e-06 ,  loss_bc = 1.9e-06,  loss_ic = 9.1e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 4500, loss_r = 1.3e-05 ,  loss_bc = 1.2e-05,  loss_ic = 1.2e-05,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.5e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 4600, loss_r = 8.5e-06 ,  loss_bc = 2.0e-07,  loss_ic = 4.2e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 4700, loss_r = 5.9e-06 ,  loss_bc = 1.1e-06,  loss_ic = 6.3e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 4800, loss_r = 8.9e-06 ,  loss_bc = 4.5e-06,  loss_ic = 3.3e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 4900, loss_r = 1.3e-05 ,  loss_bc = 2.3e-06,  loss_ic = 2.6e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5000, loss_r = 6.3e-06 ,  loss_bc = 1.9e-06,  loss_ic = 4.2e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5100, loss_r = 6.3e-06 ,  loss_bc = 4.6e-07,  loss_ic = 3.4e-06,  lr = 1.0e-03, time_taken = 3.3e-01, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5200, loss_r = 6.6e-06 ,  loss_bc = 1.2e-06,  loss_ic = 3.0e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 7.9e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5300, loss_r = 5.5e-06 ,  loss_bc = 1.1e-06,  loss_ic = 2.9e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 7.7e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5400, loss_r = 4.6e-06 ,  loss_bc = 3.5e-07,  loss_ic = 2.8e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.3e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5500, loss_r = 4.9e-06 ,  loss_bc = 1.1e-06,  loss_ic = 3.4e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 9.9e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5600, loss_r = 4.7e-06 ,  loss_bc = 1.2e-06,  loss_ic = 2.3e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 8.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5700, loss_r = 5.2e-06 ,  loss_bc = 5.8e-07,  loss_ic = 1.7e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5800, loss_r = 5.5e-06 ,  loss_bc = 3.7e-07,  loss_ic = 2.7e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 8.5e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 5900, loss_r = 4.8e-06 ,  loss_bc = 3.4e-07,  loss_ic = 2.8e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 9.4e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 6000, loss_r = 1.3e-05 ,  loss_bc = 9.5e-06,  loss_ic = 5.5e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+
+=== RAR Evaluation at iteration 6000 ===
+Mean residual: 2.478e-01
+Adding 100 new point(s) with highest residuals:
+  Point 1: [ 0.7376958 -0.5958463], Residual: 3.374e+00
+  Point 2: [ 0.6725288  -0.53037333], Residual: 2.935e+00
+  Point 3: [ 0.55502915 -0.600803  ], Residual: 2.904e+00
+  Point 4: [ 0.25798208 -0.5320823 ], Residual: 2.739e+00
+  Point 5: [ 0.43892854 -0.66320443], Residual: 2.434e+00
+  Point 6: [0.67839354 0.31900883], Residual: 2.347e+00
+  Point 7: [0.39845777 0.36831176], Residual: 2.343e+00
+  Point 8: [ 0.18133211 -0.51516056], Residual: 2.331e+00
+  Point 9: [ 0.6530491  -0.49878395], Residual: 2.324e+00
+  Point 10: [0.22072697 0.48133254], Residual: 2.240e+00
+  Point 11: [0.5153033  0.34415781], Residual: 2.222e+00
+  Point 12: [ 0.46472806 -0.49273896], Residual: 2.201e+00
+  Point 13: [ 0.84282017 -0.48700678], Residual: 2.158e+00
+  Point 14: [ 0.9024113 -0.7337707], Residual: 2.155e+00
+  Point 15: [0.2543903  0.41102374], Residual: 2.105e+00
+  Point 16: [ 0.01056951 -0.295609  ], Residual: 2.065e+00
+  Point 17: [0.34220493 0.41604638], Residual: 2.008e+00
+  Point 18: [0.43775445 0.33132017], Residual: 1.975e+00
+  Point 19: [0.11686981 0.43223345], Residual: 1.971e+00
+  Point 20: [0.45859796 0.3985374 ], Residual: 1.928e+00
+  Point 21: [ 0.62502366 -0.63284874], Residual: 1.906e+00
+  Point 22: [0.13717657 0.34164345], Residual: 1.880e+00
+  Point 23: [ 0.17294598 -0.9448426 ], Residual: 1.820e+00
+  Point 24: [ 0.95330924 -0.6997347 ], Residual: 1.784e+00
+  Point 25: [0.9782552 0.3642136], Residual: 1.777e+00
+  Point 26: [0.7042955 0.5452107], Residual: 1.776e+00
+  Point 27: [ 0.9595845  -0.60463846], Residual: 1.756e+00
+  Point 28: [ 0.18106723 -0.4832356 ], Residual: 1.755e+00
+  Point 29: [0.16438997 0.4591695 ], Residual: 1.748e+00
+  Point 30: [0.4569515  0.47490513], Residual: 1.729e+00
+  Point 31: [0.3107965 0.2866783], Residual: 1.723e+00
+  Point 32: [0.06294698 0.41346133], Residual: 1.708e+00
+  Point 33: [ 0.2125659  -0.37460232], Residual: 1.706e+00
+  Point 34: [ 0.59562117 -0.64112747], Residual: 1.694e+00
+  Point 35: [0.8173465  0.38057506], Residual: 1.669e+00
+  Point 36: [0.63530165 0.5131092 ], Residual: 1.665e+00
+  Point 37: [ 0.606329  -0.6993536], Residual: 1.658e+00
+  Point 38: [ 0.43860877 -0.5025735 ], Residual: 1.655e+00
+  Point 39: [ 0.34720176 -0.6415323 ], Residual: 1.653e+00
+  Point 40: [0.23711824 0.33360183], Residual: 1.648e+00
+  Point 41: [ 0.24230742 -0.5874158 ], Residual: 1.648e+00
+  Point 42: [ 0.5890321  -0.71152234], Residual: 1.628e+00
+  Point 43: [0.2446788 0.4119748], Residual: 1.613e+00
+  Point 44: [ 0.6795914  -0.57282305], Residual: 1.612e+00
+  Point 45: [0.28964698 0.41376722], Residual: 1.610e+00
+  Point 46: [0.0840947  0.31553268], Residual: 1.599e+00
+  Point 47: [ 0.05945247 -0.37389648], Residual: 1.597e+00
+  Point 48: [ 0.15529335 -0.84869516], Residual: 1.587e+00
+  Point 49: [0.24130553 0.34705985], Residual: 1.586e+00
+  Point 50: [ 0.40432924 -0.47629225], Residual: 1.583e+00
+  Point 51: [ 0.01595098 -0.5242522 ], Residual: 1.582e+00
+  Point 52: [0.87601715 0.5523058 ], Residual: 1.577e+00
+  Point 53: [ 0.274081   -0.97203434], Residual: 1.574e+00
+  Point 54: [0.1860761  0.39911866], Residual: 1.572e+00
+  Point 55: [ 0.51294774 -0.5778537 ], Residual: 1.570e+00
+  Point 56: [ 0.67901206 -0.68672466], Residual: 1.570e+00
+  Point 57: [0.18515784 0.40157223], Residual: 1.569e+00
+  Point 58: [ 0.00503832 -0.45424187], Residual: 1.568e+00
+  Point 59: [ 0.5711037 -0.5955517], Residual: 1.556e+00
+  Point 60: [0.9899029 0.4285345], Residual: 1.531e+00
+  Point 61: [ 0.05093586 -0.5129814 ], Residual: 1.516e+00
+  Point 62: [0.8767909  0.34301412], Residual: 1.515e+00
+  Point 63: [ 0.26773953 -0.5797508 ], Residual: 1.510e+00
+  Point 64: [0.4714582  0.30115497], Residual: 1.490e+00
+  Point 65: [ 0.59583193 -0.9413246 ], Residual: 1.478e+00
+  Point 66: [ 0.7635598 -0.637172 ], Residual: 1.467e+00
+  Point 67: [ 0.24950516 -0.48636258], Residual: 1.460e+00
+  Point 68: [ 0.44926673 -0.41191328], Residual: 1.455e+00
+  Point 69: [0.00566685 0.17858088], Residual: 1.447e+00
+  Point 70: [ 0.551812   -0.74639773], Residual: 1.446e+00
+  Point 71: [ 0.8340727  -0.44903982], Residual: 1.437e+00
+  Point 72: [ 0.55797225 -0.7276913 ], Residual: 1.433e+00
+  Point 73: [0.7114276 0.5167568], Residual: 1.425e+00
+  Point 74: [ 0.42382514 -0.655957  ], Residual: 1.423e+00
+  Point 75: [ 0.77555716 -0.46434605], Residual: 1.422e+00
+  Point 76: [ 0.03190702 -0.41521537], Residual: 1.415e+00
+  Point 77: [ 0.7909707 -0.7095549], Residual: 1.413e+00
+  Point 78: [ 0.6347207 -0.650468 ], Residual: 1.411e+00
+  Point 79: [0.9575802 0.5205834], Residual: 1.406e+00
+  Point 80: [ 0.13255638 -0.36984277], Residual: 1.401e+00
+  Point 81: [ 0.34854245 -0.5950556 ], Residual: 1.400e+00
+  Point 82: [ 0.48617858 -0.68428683], Residual: 1.392e+00
+  Point 83: [ 0.37298816 -0.95026505], Residual: 1.388e+00
+  Point 84: [ 0.61535907 -0.49943948], Residual: 1.385e+00
+  Point 85: [0.02325499 0.46446526], Residual: 1.384e+00
+  Point 86: [ 0.91185504 -0.44410086], Residual: 1.381e+00
+  Point 87: [0.54583186 0.46152043], Residual: 1.380e+00
+  Point 88: [0.7979867  0.49030697], Residual: 1.371e+00
+  Point 89: [0.17338216 0.2536025 ], Residual: 1.366e+00
+  Point 90: [0.9208221  0.12225771], Residual: 1.365e+00
+  Point 91: [0.29702318 0.4090693 ], Residual: 1.359e+00
+  Point 92: [ 0.5552922 -0.6666429], Residual: 1.357e+00
+  Point 93: [0.74604154 0.38513052], Residual: 1.356e+00
+  Point 94: [ 0.41315216 -0.35034335], Residual: 1.347e+00
+  Point 95: [ 0.76281756 -0.55632126], Residual: 1.340e+00
+  Point 96: [ 0.42873657 -0.6902791 ], Residual: 1.340e+00
+  Point 97: [ 0.72242945 -0.65504515], Residual: 1.340e+00
+  Point 98: [ 0.22022915 -0.9607849 ], Residual: 1.333e+00
+  Point 99: [0.9557719 0.6395898], Residual: 1.332e+00
+  Point 100: [0.40690488 0.30274618], Residual: 1.332e+00
+Total adaptive points: 300
+
+Iteration: 6100, loss_r = 5.0e-06 ,  loss_bc = 3.7e-06,  loss_ic = 4.3e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.2e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 6200, loss_r = 2.5e-06 ,  loss_bc = 2.7e-07,  loss_ic = 1.8e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 7.2e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 6300, loss_r = 3.6e-06 ,  loss_bc = 2.4e-07,  loss_ic = 2.1e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 9.4e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 6400, loss_r = 3.2e-06 ,  loss_bc = 1.2e-06,  loss_ic = 1.4e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 9.2e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 6500, loss_r = 4.3e-06 ,  loss_bc = 9.7e-06,  loss_ic = 4.2e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 6600, loss_r = 3.9e-06 ,  loss_bc = 2.1e-06,  loss_ic = 2.4e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 8.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 6700, loss_r = 3.2e-06 ,  loss_bc = 1.8e-07,  loss_ic = 1.1e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 5.4e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 6800, loss_r = 4.9e-06 ,  loss_bc = 1.0e-05,  loss_ic = 5.0e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 6900, loss_r = 4.5e-06 ,  loss_bc = 2.8e-06,  loss_ic = 3.1e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 6.9e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7000, loss_r = 2.6e-06 ,  loss_bc = 2.0e-07,  loss_ic = 1.2e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 7.7e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7100, loss_r = 4.4e-06 ,  loss_bc = 2.7e-06,  loss_ic = 1.8e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7200, loss_r = 7.2e-06 ,  loss_bc = 1.6e-06,  loss_ic = 1.2e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 7.3e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7300, loss_r = 3.5e-06 ,  loss_bc = 5.7e-07,  loss_ic = 1.2e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 7.0e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7400, loss_r = 3.8e-06 ,  loss_bc = 1.8e-07,  loss_ic = 8.8e-07,  lr = 1.0e-03, time_taken = 3.5e-01, rel_l2_error = 6.0e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7500, loss_r = 2.8e-06 ,  loss_bc = 5.1e-06,  loss_ic = 3.2e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 7.7e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7600, loss_r = 2.9e-06 ,  loss_bc = 1.7e-06,  loss_ic = 1.7e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 6.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7700, loss_r = 2.3e-06 ,  loss_bc = 1.8e-06,  loss_ic = 1.8e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 8.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7800, loss_r = 4.0e-06 ,  loss_bc = 2.3e-07,  loss_ic = 2.2e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 7.6e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 7900, loss_r = 1.7e-05 ,  loss_bc = 1.8e-06,  loss_ic = 6.1e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 8000, loss_r = 3.4e-06 ,  loss_bc = 2.3e-06,  loss_ic = 1.7e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 7.0e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+
+=== RAR Evaluation at iteration 8000 ===
+Mean residual: 2.345e-01
+Adding 100 new point(s) with highest residuals:
+  Point 1: [0.0501557  0.35628557], Residual: 2.439e+00
+  Point 2: [ 0.2548908  -0.65119445], Residual: 2.406e+00
+  Point 3: [ 0.4134388  -0.44293165], Residual: 2.349e+00
+  Point 4: [ 0.25812882 -0.5764173 ], Residual: 2.333e+00
+  Point 5: [ 0.3293078 -0.4224143], Residual: 2.327e+00
+  Point 6: [ 0.8841293  -0.52464163], Residual: 2.246e+00
+  Point 7: [0.31086808 0.4332142 ], Residual: 2.236e+00
+  Point 8: [0.6763809 0.5204009], Residual: 2.160e+00
+  Point 9: [0.07392418 0.36802447], Residual: 2.139e+00
+  Point 10: [ 0.02398181 -0.81311154], Residual: 2.053e+00
+  Point 11: [ 0.6572782  -0.69742894], Residual: 2.040e+00
+  Point 12: [0.3048007 0.5200242], Residual: 1.980e+00
+  Point 13: [0.07070303 0.2588328 ], Residual: 1.973e+00
+  Point 14: [ 0.8896379  -0.69125056], Residual: 1.952e+00
+  Point 15: [ 0.18126845 -0.5533494 ], Residual: 1.937e+00
+  Point 16: [0.11009616 0.3853693 ], Residual: 1.856e+00
+  Point 17: [0.17114145 0.32532656], Residual: 1.842e+00
+  Point 18: [0.36260444 0.30021918], Residual: 1.825e+00
+  Point 19: [ 0.5916403  -0.57154274], Residual: 1.824e+00
+  Point 20: [ 0.03752041 -0.52693486], Residual: 1.818e+00
+  Point 21: [0.734277  0.3357643], Residual: 1.809e+00
+  Point 22: [ 0.41800523 -0.44950008], Residual: 1.803e+00
+  Point 23: [ 0.2957055 -0.5404335], Residual: 1.803e+00
+  Point 24: [ 0.57743186 -0.50497496], Residual: 1.792e+00
+  Point 25: [ 0.9580435 -0.7840854], Residual: 1.749e+00
+  Point 26: [0.4235037  0.22275758], Residual: 1.747e+00
+  Point 27: [ 0.08531547 -0.76985407], Residual: 1.732e+00
+  Point 28: [ 0.52159554 -0.7105061 ], Residual: 1.724e+00
+  Point 29: [ 0.70020163 -0.7110065 ], Residual: 1.709e+00
+  Point 30: [0.582642   0.29541218], Residual: 1.694e+00
+  Point 31: [ 0.38778126 -0.6163877 ], Residual: 1.673e+00
+  Point 32: [0.37919688 0.39412415], Residual: 1.670e+00
+  Point 33: [ 0.9382508  -0.56471026], Residual: 1.647e+00
+  Point 34: [0.5719931  0.42601287], Residual: 1.643e+00
+  Point 35: [ 0.03254634 -0.7823062 ], Residual: 1.629e+00
+  Point 36: [ 0.23825914 -0.9251454 ], Residual: 1.625e+00
+  Point 37: [0.09378725 0.35499442], Residual: 1.621e+00
+  Point 38: [ 0.08452094 -0.5149157 ], Residual: 1.619e+00
+  Point 39: [ 0.21715409 -0.536564  ], Residual: 1.612e+00
+  Point 40: [0.28221083 0.46320236], Residual: 1.603e+00
+  Point 41: [0.0447216  0.41288662], Residual: 1.590e+00
+  Point 42: [ 0.3764218 -0.632668 ], Residual: 1.573e+00
+  Point 43: [ 0.5984052 -0.6344272], Residual: 1.568e+00
+  Point 44: [ 0.28321964 -0.9127501 ], Residual: 1.562e+00
+  Point 45: [ 0.21977651 -0.21409655], Residual: 1.560e+00
+  Point 46: [0.21329683 0.36177492], Residual: 1.560e+00
+  Point 47: [0.34788328 0.4616239 ], Residual: 1.558e+00
+  Point 48: [ 0.417449  -0.6926327], Residual: 1.553e+00
+  Point 49: [0.5028553 0.5346867], Residual: 1.552e+00
+  Point 50: [0.7657792 0.5463152], Residual: 1.535e+00
+  Point 51: [ 0.77064896 -0.7225913 ], Residual: 1.529e+00
+  Point 52: [ 0.01962113 -0.8142947 ], Residual: 1.527e+00
+  Point 53: [ 0.5655696 -0.3538227], Residual: 1.516e+00
+  Point 54: [ 0.16357106 -0.63208365], Residual: 1.514e+00
+  Point 55: [ 0.45756328 -0.96422887], Residual: 1.506e+00
+  Point 56: [ 0.06092989 -0.9542024 ], Residual: 1.492e+00
+  Point 57: [ 0.24315464 -0.46276832], Residual: 1.489e+00
+  Point 58: [ 0.66644573 -0.36119485], Residual: 1.480e+00
+  Point 59: [ 0.27748454 -0.62092793], Residual: 1.473e+00
+  Point 60: [0.06886804 0.32550836], Residual: 1.470e+00
+  Point 61: [ 0.6481124 -0.5522479], Residual: 1.465e+00
+  Point 62: [ 0.38698196 -0.9943669 ], Residual: 1.464e+00
+  Point 63: [ 0.8909928  -0.71555436], Residual: 1.464e+00
+  Point 64: [0.145531   0.39168167], Residual: 1.461e+00
+  Point 65: [0.12933844 0.3685584 ], Residual: 1.454e+00
+  Point 66: [0.01472914 0.1991297 ], Residual: 1.449e+00
+  Point 67: [0.16438276 0.28681254], Residual: 1.448e+00
+  Point 68: [0.34760845 0.35707903], Residual: 1.441e+00
+  Point 69: [ 0.16518945 -0.86735594], Residual: 1.439e+00
+  Point 70: [ 0.0782187  -0.29690218], Residual: 1.432e+00
+  Point 71: [0.6808845  0.45295072], Residual: 1.430e+00
+  Point 72: [ 0.94930387 -0.6752211 ], Residual: 1.422e+00
+  Point 73: [ 0.23588008 -0.57146335], Residual: 1.420e+00
+  Point 74: [ 0.34793067 -0.6354556 ], Residual: 1.415e+00
+  Point 75: [0.3385204  0.37570536], Residual: 1.412e+00
+  Point 76: [ 0.65386033 -0.7646743 ], Residual: 1.408e+00
+  Point 77: [0.65075886 0.25540102], Residual: 1.408e+00
+  Point 78: [0.3666731  0.52688634], Residual: 1.405e+00
+  Point 79: [ 0.37837017 -0.981063  ], Residual: 1.390e+00
+  Point 80: [ 0.14489824 -0.91203535], Residual: 1.387e+00
+  Point 81: [0.63693285 0.47666776], Residual: 1.386e+00
+  Point 82: [0.27898937 0.41903603], Residual: 1.383e+00
+  Point 83: [0.436063  0.3478496], Residual: 1.382e+00
+  Point 84: [0.21255267 0.41036057], Residual: 1.379e+00
+  Point 85: [ 0.33155137 -0.9652163 ], Residual: 1.376e+00
+  Point 86: [ 0.27683973 -0.8995267 ], Residual: 1.370e+00
+  Point 87: [0.19405788 0.14091945], Residual: 1.366e+00
+  Point 88: [0.2941429  0.19286776], Residual: 1.364e+00
+  Point 89: [ 0.27824986 -0.38322735], Residual: 1.364e+00
+  Point 90: [ 0.38269562 -0.9504118 ], Residual: 1.356e+00
+  Point 91: [ 0.74723  -0.514712], Residual: 1.354e+00
+  Point 92: [0.5645742 0.5939394], Residual: 1.349e+00
+  Point 93: [ 0.3874933  -0.60872364], Residual: 1.346e+00
+  Point 94: [0.66598535 0.23738599], Residual: 1.343e+00
+  Point 95: [ 0.18773997 -0.5628413 ], Residual: 1.339e+00
+  Point 96: [ 0.9677515  -0.47706378], Residual: 1.338e+00
+  Point 97: [ 0.21380955 -0.87199485], Residual: 1.335e+00
+  Point 98: [ 0.605184   -0.41067588], Residual: 1.332e+00
+  Point 99: [ 0.42112207 -0.32503176], Residual: 1.331e+00
+  Point 100: [0.613759   0.27438843], Residual: 1.328e+00
+Total adaptive points: 400
+
+Iteration: 8100, loss_r = 4.8e-06 ,  loss_bc = 9.6e-07,  loss_ic = 1.7e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 5.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 8200, loss_r = 6.9e-06 ,  loss_bc = 8.8e-06,  loss_ic = 2.9e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 9.1e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 8300, loss_r = 2.2e-06 ,  loss_bc = 1.1e-06,  loss_ic = 1.4e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 5.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 8400, loss_r = 3.2e-06 ,  loss_bc = 2.2e-07,  loss_ic = 2.0e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 7.3e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 8500, loss_r = 2.2e-06 ,  loss_bc = 1.6e-06,  loss_ic = 1.6e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.1e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 8600, loss_r = 1.4e-06 ,  loss_bc = 3.1e-07,  loss_ic = 6.3e-07,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 4.7e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 8700, loss_r = 2.6e-06 ,  loss_bc = 1.5e-06,  loss_ic = 2.2e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 5.6e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 8800, loss_r = 2.4e-06 ,  loss_bc = 2.3e-06,  loss_ic = 1.7e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 5.5e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 8900, loss_r = 3.0e-06 ,  loss_bc = 4.4e-07,  loss_ic = 1.2e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 9.2e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9000, loss_r = 2.9e-06 ,  loss_bc = 6.9e-07,  loss_ic = 1.4e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 5.2e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9100, loss_r = 3.4e-06 ,  loss_bc = 2.7e-07,  loss_ic = 9.5e-07,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 6.7e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9200, loss_r = 3.1e-06 ,  loss_bc = 4.3e-07,  loss_ic = 1.1e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 6.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9300, loss_r = 1.6e-06 ,  loss_bc = 5.7e-07,  loss_ic = 7.9e-07,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 5.4e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9400, loss_r = 2.0e-06 ,  loss_bc = 1.7e-07,  loss_ic = 7.6e-07,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 5.7e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9500, loss_r = 2.9e-06 ,  loss_bc = 5.2e-07,  loss_ic = 6.4e-07,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 8.2e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9600, loss_r = 2.8e-06 ,  loss_bc = 5.0e-06,  loss_ic = 2.4e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 6.4e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9700, loss_r = 2.3e-06 ,  loss_bc = 4.2e-06,  loss_ic = 2.9e-06,  lr = 1.0e-03, time_taken = 3.1e-01, rel_l2_error = 1.0e-02
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9800, loss_r = 2.4e-06 ,  loss_bc = 1.1e-07,  loss_ic = 1.1e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 5.8e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Iteration: 9900, loss_r = 2.6e-06 ,  loss_bc = 1.9e-06,  loss_ic = 1.2e-06,  lr = 1.0e-03, time_taken = 3.2e-01, rel_l2_error = 4.2e-03
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+
+=== Switching to LBFGS optimizer at iteration 10000 ===
+Using scipy L-BFGS-B optimizer (bburgers_hybrid_trainer.py approach)
+Optimizer: L-BFGS-B (maxiter=10000, factr=1000.0, m=100, maxls=50, pgtol=1e-14)
+L-BFGS Iteration: 0, Loss: 4.280725e-06
+L-BFGS Iteration: 1, Loss: 3.132036e-06, Relative L2 Error: 4.033840e-03
+L-BFGS: Time for 100 iterations = 242.8617 s
+L-BFGS Iteration: 100, Loss: 1.086524e-06, Relative L2 Error: 2.185541e-03
+L-BFGS Iteration: 200, Loss: 5.118600e-07, Relative L2 Error: 1.554461e-03
+L-BFGS Iteration: 300, Loss: 3.141126e-07, Relative L2 Error: 1.520334e-03
+L-BFGS Iteration: 400, Loss: 2.020169e-07, Relative L2 Error: 1.397751e-03
+L-BFGS Iteration: 500, Loss: 1.548784e-07, Relative L2 Error: 1.408093e-03
+L-BFGS Iteration: 600, Loss: 1.113636e-07, Relative L2 Error: 1.016020e-03
+L-BFGS Iteration: 700, Loss: 9.760328e-08, Relative L2 Error: 9.626867e-04
+L-BFGS Iteration: 800, Loss: 8.058022e-08, Relative L2 Error: 7.390326e-04
+L-BFGS Iteration: 900, Loss: 7.165194e-08, Relative L2 Error: 6.530898e-04
+L-BFGS optimization finished after 911 iterations.
+L-BFGS training completed after 911 iterations
+Model state saved to ./checkpoints/burgers_exact\2026-03-04_21-17-30-903472\model.pth
+Training completed successfully!
+Evaluating on 40000 points using chunk size 500
+RelL2_U%  : 6.398e-02 
