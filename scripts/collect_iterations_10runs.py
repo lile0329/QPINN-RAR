@@ -121,10 +121,14 @@ def compute_mean_iterations_per_equation_method(
         if n == 0:
             mean_it = 0.0
             std_it = 0.0
+        elif n == 1:
+            mean_it = values[0]
+            std_it = 0.0
         else:
             mean_it = sum(values) / n
-            # 无偏/有偏在这里差别不大，直接用总体标准差
-            var = sum((v - mean_it) ** 2 for v in values) / n
+            # Use sample standard deviation to match final_metrics_summary.csv
+            # and the usual reporting convention for repeated random-seed runs.
+            var = sum((v - mean_it) ** 2 for v in values) / (n - 1)
             std_it = var ** 0.5
         stats_rows.append(
             {
