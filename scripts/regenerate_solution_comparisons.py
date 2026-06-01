@@ -51,6 +51,18 @@ def finite_minmax(arrays: Iterable[np.ndarray]) -> Tuple[float, float]:
     return vmin, vmax
 
 
+def finite_percentile(arrays: Iterable[np.ndarray], percentile: float) -> float:
+    values = []
+    for arr in arrays:
+        arr = np.asarray(arr)
+        finite = arr[np.isfinite(arr)]
+        if finite.size:
+            values.append(finite)
+    if not values:
+        return 1.0
+    return float(np.percentile(np.concatenate(values), percentile))
+
+
 def relative_l2_error(u_pred: np.ndarray, u_true: np.ndarray) -> float:
     numerator = np.linalg.norm((u_pred - u_true).reshape(-1), ord=2)
     denominator = np.linalg.norm(u_true.reshape(-1), ord=2)
@@ -103,9 +115,10 @@ def save_relative_error_heatmap(
     ax.set_title(title)
     ax.set_xlabel(x_label)
     ax.set_ylabel(y_label)
+    ax.set_yticks(np.arange(float(y.min()), float(y.max()) + 1e-12, 0.125))
     divider = make_axes_locatable(ax)
     cax = divider.append_axes("right", size="4.5%", pad=0.06)
-    fig.colorbar(im, cax=cax, format="%.1e")
+    fig.colorbar(im, cax=cax, format="%.1e", extend="max")
     plt.tight_layout()
     fig.savefig(save_path, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
@@ -147,11 +160,12 @@ def save_heat3d_relative_error_slices(
         )
         ax.set_title(f"y={item['y0']:.2f}, z={item['z0']:.2f}\nRelL2={item['relative_l2']:.2e}")
         ax.set_xlabel(x_label)
+        ax.set_yticks(np.arange(float(y.min()), float(y.max()) + 1e-12, 0.125))
 
     axes[0].set_ylabel(y_label)
     fig.suptitle(title)
     if im is not None:
-        fig.colorbar(im, ax=axes.ravel().tolist(), format="%.1e", fraction=0.025, pad=0.02)
+        fig.colorbar(im, ax=axes.ravel().tolist(), format="%.1e", fraction=0.025, pad=0.02, extend="max")
     fig.savefig(save_path, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
 
@@ -358,6 +372,18 @@ def parse_args():
         default=None,
         help="Optional shared upper colorbar limit for relative error maps.",
     )
+    parser.add_argument(
+        "--heat3d-slice-vmax-percentile",
+        type=float,
+        default=99.0,
+        help="Percentile used as the Heat3D slice colorbar upper limit when --relative-vmax is not set.",
+    )
+    parser.add_argument(
+        "--relative-vmax-percentile",
+        type=float,
+        default=99.0,
+        help="Percentile used as the shared relative-error colorbar upper limit when --relative-vmax is not set.",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Only list checkpoints that would be processed.")
     return parser.parse_args()
 
@@ -397,7 +423,10 @@ def main():
         error_range = (0.0, finite_minmax(np.abs(item["u_pred"] - item["u_true"]) for item in results)[1])
         relative_error_range = (
             0.0,
-            finite_minmax(item["relative_error_map"] for item in results)[1],
+            finite_percentile(
+                (item["relative_error_map"] for item in results),
+                args.relative_vmax_percentile,
+            ),
         )
         if args.relative_vmax is not None:
             relative_error_range = (0.0, float(args.relative_vmax))
@@ -443,7 +472,10 @@ def main():
                 for slice_item in item.get("heat3d_relative_slices", [])
             ]
             if slice_maps:
-                heat3d_slice_error_range = (0.0, finite_minmax(slice_maps)[1])
+                heat3d_slice_error_range = (
+                    0.0,
+                    finite_percentile(slice_maps, args.heat3d_slice_vmax_percentile),
+                )
                 if args.relative_vmax is not None:
                     heat3d_slice_error_range = (0.0, float(args.relative_vmax))
                 for item in results:
